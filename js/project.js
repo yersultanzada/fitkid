@@ -33,5 +33,50 @@
     target: '#mainNav',
     offset: 56
   });
+  $('#main-carousel').owlCarousel({
+    items: 3,
+    loop:true,
+    margin:10,
+    merge:true,
+    nav:true,
+    navText: [
+      "<i class=\"fas fa-chevron-left\"></i>",
+      "<i class=\"fas fa-chevron-right\"></i>"
+    ],
+    dots:false,
+    responsive:{
+      678:{
+        mergeFit:true
+      },
+      1000:{
+        mergeFit:false
+      }
+    }
+  });
+  $('#team-carousel').owlCarousel({
+    items: 5,
+    loop:true,
+    margin:10,
+    dots: false,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    nav:true,
+    navText: [
+      "<i class=\"fas fa-chevron-left\"></i>",
+      "<i class=\"fas fa-chevron-right\"></i>"
+    ],
+    responsive:{
+      0:{
+        items:1
+      },
+      768:{
+        items:3
+      },
+      1000:{
+        items:5
+      }
+    }
+  });
 
 })(jQuery); // End of use strict

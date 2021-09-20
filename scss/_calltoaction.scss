@@ -1,61 +1,58 @@
-// Styling for the calltoaction1 section
-#callToAction1 {
-  background-color: $primary-100;
-}
-
-// Styling for the calltoaction2 section
-#callToAction2 {
-  background-color: $primary-200;
-}
-
-// Styling for the calltoaction3 section
-#callToAction3 {
-  .wt-block-formLeft {
-    display: flex;
-    height: 300px;
-    background-color: #cccccc;
-    img {
-      align-self: center;
-      margin: auto;
+#callToAction {
+  position: relative;
+  .wt-background-headerImg {
+    background: url(../img/cta-bg.png) no-repeat 50% 50% / cover;
+  }
+  p {
+    text-align: center;
+    color: $dark-blue;
+    margin: 25px auto 40px;
+    font-family: "Gotham Pro Medium", sans-serif;
+    line-height: 21px;
+  }
+  .contact-form {
+    .form-row {
+      justify-content: center;
+      input {
+        width: 350px;
+        height: 42px;
+        border-radius: 5px;
+        border: none;
+      }
+      button {
+        border: 1px solid #35ABD3;
+        padding: 1px 20px;
+        border-radius: 6px;
+        margin-left: 16px;
+        background-color: transparent;
+        color: #35ABD3;
+        cursor: pointer;
+        outline: none;
+      }
     }
   }
-  .wt-block-formRight {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 40px;
+  .cta-ball {
+    position: absolute;
+    top: -30px;
+    right: 77px;
+    filter: drop-shadow(-10px 8px 19px rgba(19, 41, 75, 0.25));
   }
-}
-
-// Styling for the calltoaction4 section
-#callToAction4 {
-  background-color: $primary-200;
-  .wt-block-formCenter {
-    background-color: #fff;
-    padding: 40px 40px 50px;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 3px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 991px) {
-  #callToAction1 form{
-    max-width: 500px;
-    margin: 0 auto;
+  .cta-horse {
+    position: absolute;
+    bottom: -65px;
+    right: 120px;
+    filter: drop-shadow(0px 11px 19px rgba(19, 41, 75, 0.25));
+    transform: rotate(-21.5deg);
   }
 }
 @media (min-width: 992px) {
-  #callToAction3 {
-    .wt-block-formLeft {
-      height: 500px;
+  #callToAction {
+    ._title {
+      max-width: 465px;
+      margin: auto;
     }
-    .wt-block-formRight {
-      max-width: 410px;
-      padding: 40px 0;
+    p {
+      max-width: 350px;
     }
-  }
-  #callToAction4 .wt-block-formCenter {
-    padding: 40px 80px 50px;
   }
 }

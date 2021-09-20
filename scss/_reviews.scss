@@ -1,0 +1,44 @@
+#reviews {
+  position: relative;
+  .review-item {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 23px;
+    .item-name {
+      display: flex;
+      align-items: center;
+      span {
+        font-size: 24px;
+        line-height: 30px;
+        font-family: "Gotham Pro Medium", sans-serif;
+        margin-left: 25px;
+      }
+    }
+    .item-desc {
+      margin-top: 35px;
+      margin-bottom: 24px;
+      line-height: 21px;
+      color: #5A6F8F;
+    }
+    .item-action {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      span {
+        color: $orange;
+        font-family: "Gotham Pro Medium", sans-serif;
+        margin-right: 7px;
+      }
+    }
+  }
+  .blur-ellipse {
+    position: absolute;
+    width: 582px;
+    height: 582px;
+    bottom: -280px;
+    left: -349px;
+    background: linear-gradient(152.85deg, rgba(203, 226, 255, 0.8) 29.1%, rgba(220, 203, 255, 0.8) 87.49%);
+    filter: blur(400px);
+    z-index: -10;
+  }
+}

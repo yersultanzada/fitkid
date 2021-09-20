@@ -1,0 +1,33 @@
+#news {
+  .news-item {
+    .item-img {
+      img {
+        width: 100%;
+        border-radius: 6px;
+      }
+    }
+    .item-date {
+      font-family: "Gotham Pro Medium", sans-serif;
+      line-height: 21px;
+      color: #5A6F8F;
+      margin-top: 24px;
+    }
+    .item-title {
+      font-family: "Gotham Pro Medium", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 11px;
+      margin-bottom: 16px;
+    }
+    .item-action {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      span {
+        color: $orange;
+        font-family: "Gotham Pro Medium", sans-serif;
+        margin-right: 7px;
+      }
+    }
+  }
+}

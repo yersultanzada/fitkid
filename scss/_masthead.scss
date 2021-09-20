@@ -1,20 +1,66 @@
 // Styling for the masthead
 section#masthead {
-  position: relative;
-  .wt-background-headerImg {
-    background: url(../img/ver1.jpg) no-repeat 50% 50% / cover , #3c506f;
-    filter: saturate(300%);
-  }
-  .wt-background-headerOverlay {
-    background: rgba(60, 80, 111, 0.56);
-  }
-  .wt-block-intro {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .wt-intro-form {
-      background-color: #fff;
-      padding: 40px 100px 50px;
-      border-radius: 4px;
+  #main-carousel {
+    position: relative;
+    .item {
+      position: relative;
+      padding: 60px;
+      color: #fff;
+      border-radius: 10px;
+      &.item_long {
+        background: #FFC15D;
+        .item-img {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 364px;
+          height: 410px;
+        }
+      }
+      &.item_short {
+        background: #13294B;
+        .carousel-title {
+          margin-bottom: 96px;
+        }
+      }
+    }
+    .carousel-title {
+      font-size: 40px;
+      font-family: 'Gotham Pro Medium', sans-serif;
+      line-height: 1.1;
+      margin-bottom: 28px;
+    }
+    .carousel-desc {
+      font-size: 24px;
+      font-family: 'Gotham Pro Medium', sans-serif;
+      line-height: 1.2;
+      margin-bottom: 55px;
+    }
+    .owl-nav {
+      display: block !important;
+      .owl-prev, .owl-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: $orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+      }
+      .owl-prev {
+        left: -25px;
+      }
+      .owl-next {
+        right: -15px;
+      }
     }
   }
 }
@@ -32,94 +78,5 @@ section#masthead {
   section#masthead .wt-block-intro {
     padding-top: 150px;
     padding-bottom: 170px;
-  }
-}
-
-// Styling for the masthead1
-section#masthead1 {
-  position: relative;
-  .wt-background-headerImg {
-    background: $primary;
-  }
-  .wt-block-intro {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .wt-intro-form {
-      background-color: #fff;
-      padding: 40px 100px 50px;
-      border-radius: 4px;
-    }
-  }
-}
-@media (max-width: 575px) {
-  section#masthead1 .wt-block-intro .wt-intro-form {
-    padding: 40px 25px 50px;
-  }
-}
-@media (max-width: 767px) {
-  section#masthead1 .wt-section-heroTitle {
-    font-size: 40px;
-  }
-}
-@media (min-width: 992px) {
-  section#masthead1 .wt-block-intro {
-    padding-top: 150px;
-    padding-bottom: 170px;
-  }
-}
-
-// Styling for the masthead2
-section#masthead2 {
-  position: relative;
-  .wt-background-headerImg {
-    background: $primary-200;
-  }
-  .wt-block-intro {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .wt-intro-form {
-      background-color: #fff;
-      padding: 40px 100px 50px;
-      border-radius: 4px;
-    }
-  }
-}
-@media (min-width: 992px) {
-  section#masthead2 .wt-block-intro {
-    padding-top: 250px;
-    padding-bottom: 250px;
-  }
-}
-@media (max-width: 767px) {
-  section#masthead2 .wt-section-heroTitle {
-    font-size: 40px;
-  }
-}
-
-// Styling for the masthead3
-section#masthead3 {
-  position: relative;
-  .wt-background-headerImg {
-    background: $primary-100;
-  }
-  .wt-block-intro {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .wt-intro-form {
-      background-color: #fff;
-      padding: 40px 100px 50px;
-      border-radius: 4px;
-    }
-  }
-}
-@media (min-width: 992px) {
-  section#masthead3 .wt-block-intro {
-    padding-top: 250px;
-    padding-bottom: 250px;
-  }
-}
-@media (max-width: 767px) {
-  section#masthead3 .wt-section-heroTitle {
-    font-size: 40px;
   }
 }
