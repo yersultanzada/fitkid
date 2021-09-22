@@ -59,6 +59,17 @@ a:hover {
   display: none;
 }
 
+._circle-blur {
+  position: absolute;
+  width: 582px;
+  height: 582px;
+  border-radius: 100%;
+  background: linear-gradient(152.85deg, rgba(203, 226, 255, 0.8) 29.1%, rgba(220, 203, 255, 0.8) 87.49%);
+  -webkit-filter: blur(200px);
+  filter: blur(200px);
+  z-index: -10;
+}
+
 .all-btn {
   margin-top: 60px;
   text-align: center;
@@ -713,6 +724,11 @@ section#masthead #main-carousel .owl-nav .owl-next {
   right: -25px;
 }
 
+#main-about {
+  position: relative;
+  padding-bottom: 90px;
+}
+
 #main-about ._title {
   margin-bottom: 70px;
 }
@@ -811,6 +827,42 @@ section#masthead #main-carousel .owl-nav .owl-next {
 
 #main-about .about-item._right-2 .item-text {
   margin-top: 111px;
+}
+
+#main-about .girl-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: drop-shadow(0px 15px 19px rgba(19, 41, 75, 0.2));
+  filter: drop-shadow(0px 15px 19px rgba(19, 41, 75, 0.2));
+}
+
+#main-about .boy-right {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  -webkit-filter: drop-shadow(0px 8px 9px rgba(19, 41, 75, 0.15));
+  filter: drop-shadow(0px 8px 9px rgba(19, 41, 75, 0.15));
+  -webkit-transform: rotate(3.5deg);
+  transform: rotate(3.5deg);
+}
+
+#main-about ._circle-blur {
+  left: -94px;
+  bottom: -94px;
+}
+
+#main-about ._circle-blur._right {
+  top: 60px;
+  right: -170px;
+  bottom: auto;
+  left: auto;
+}
+
+#main-about .cloud-left {
+  position: absolute;
+  top: 340px;
+  left: 0;
 }
 
 #reviews {
