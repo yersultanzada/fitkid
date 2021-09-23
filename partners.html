@@ -39,7 +39,7 @@
         </div>
         <div class="col-lg-4 text-center">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img src="img/logo.svg" alt="">
+                <img src="img/main/logo.svg" alt="">
             </a>
             <a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
                 <i class="fas fa-bars"></i>
@@ -60,7 +60,22 @@
         </div>
     </div>
 </nav>
-
+<!-- Breadcrumbs -->
+<nav aria-label="breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="arrow-left">
+                        <a href="/"><img src="img/main/breadcrumb-arrow.svg" alt=""></a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>Партнерам</span></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</nav>
 <!-- About -->
 <section id="partners-main">
     <div class="container">
@@ -180,42 +195,38 @@
     </div>
 </section>
 
-<!-- Services -->
-<section id="callToAction">
-    <div class="wt-block-background">
-        <div class="wt-background wt-background-headerImg"></div>
-        <div class="wt-background wt-background-headerOverlay"></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="_title">
-                    Получите бесплатный
-                    пробный урок!
-                </div>
-                <p>
-                    Отправьте заявку на пробный урок и
-                    мы свяжемся с вами в ближайшее время!
-                </p>
-                <form class="contact-form" id="contact-form_1" method="POST">
-                    <div class="form-row">
-                        <input type="tel" class="form-control contact-form__input contact-form__input_tel tel" placeholder="+7 (___) ___ ____" name="tel" required="required">
-                        <button type="submit" class="contact-form__button">
+<!-- callToAction -->
+<div class="partners-pt">
+    <section id="partners-callToAction">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="_title">
+                        Получите КЭШБЭК
+                    </div>
+                    <p class="callTo-desc">
+                        Отправьте заявку на сотрудничество и
+                        мы свяжемся с вами в ближайшее время!
+                    </p>
+                    <form class="contact-form" id="contact-form_1" method="POST">
+                        <div class="form-row">
+                            <input type="tel" class="form-control contact-form__input contact-form__input_tel tel" placeholder="+7 (___) ___ ____" name="tel" required="required">
+                            <button type="submit" class="contact-form__button">
 							  <span class="_preloader">
 								<i class="fas fa-spinner fa-spin fa-fw"></i>
 								<span class="sr-only">Loading...</span>
 							  </span>
-                            Отправить
-                        </button>
-                    </div>
-                    <p class="contact-form__description text-center mt-3"></p>
-                </form>
+                                Отправить
+                            </button>
+                        </div>
+                        <p class="contact-form__description text-center mt-3 mb-0"></p>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-    <img src="img/cta-ball.png" class="cta-ball" alt="">
-    <img src="img/cta-horse.png" class="cta-horse" alt="">
-</section>
+    </section>
+    <img src="img/partners/inner/call-bg.png" class="call-moto" alt="">
+</div>
 
 <!-- Footer -->
 <section id="footer">

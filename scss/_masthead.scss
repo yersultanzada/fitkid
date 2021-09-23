@@ -1,21 +1,23 @@
 // Styling for the masthead
 section#masthead {
   #main-carousel {
-    position: relative;
-    .item {
+    .main-carousel-pt {
       position: relative;
+      padding-top: 60px;
+    }
+    .item {
       padding: 60px;
       color: #fff;
       border-radius: 10px;
       &.item_long {
         background: #FFC15D;
         .item-img {
-          display: block;
           position: absolute;
           bottom: 0;
-          right: 0;
-          width: 364px;
-          height: 410px;
+          right: -35px;
+          img {
+            filter: drop-shadow(-19px 0px 33px rgba(19, 41, 75, 0.1));
+          }
         }
       }
       &.item_short {

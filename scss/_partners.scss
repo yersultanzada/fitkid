@@ -48,17 +48,21 @@
 }
 @media (min-width: 992px) {
   #partners-main {
+    padding-top: 75px;
     .main-center {
       width: 720px;
       margin: auto;
     }
   }
   #partners-adv {
-    .col-lg-3 {
+    .adv-item {
+      display: flex;
+      flex-direction: column;
       height: 270px;
-      &:nth-child(even) {
-        align-self: flex-end;
-      }
+      margin-bottom: 30px;
+    }
+    .col-lg-3:nth-child(odd) .adv-item {
+      justify-content: flex-end;
     }
   }
 }

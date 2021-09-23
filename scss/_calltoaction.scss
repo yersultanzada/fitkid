@@ -1,9 +1,8 @@
-#callToAction {
-  position: relative;
+#callToAction, #partners-callToAction {
   .wt-background-headerImg {
-    background: url(../img/cta-bg.png) no-repeat 50% 50% / cover;
+    background: url(../img/main/cta-bg.png) no-repeat 50% 50% / cover;
   }
-  p {
+  p.callTo-desc {
     text-align: center;
     color: $dark-blue;
     margin: 25px auto 40px;
@@ -45,13 +44,35 @@
     transform: rotate(-21.5deg);
   }
 }
+#callToAction {
+  position: relative;
+  padding-bottom: 45px;
+}
+.partners-pt {
+  position: relative;
+  padding-top: 45px;
+  .call-moto {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+#partners-callToAction {
+  background-color: #FFC15D;
+  padding-bottom: 45px;
+  .contact-form .form-row button {
+    border-color: #fff;
+    color: #fff;
+  }
+}
 @media (min-width: 992px) {
-  #callToAction {
+  #callToAction, #partners-callToAction {
     ._title {
       max-width: 465px;
       margin: auto;
     }
-    p {
+    p.callTo-desc {
       max-width: 350px;
     }
   }
