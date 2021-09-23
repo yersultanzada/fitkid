@@ -1,0 +1,23 @@
+#partners {
+  .partners-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#partners-main {
+  .main-center {
+    text-align: center;
+    font-size: 24px;
+    font-family: "Gotham Pro Medium", sans-serif;
+    line-height: 36px;
+  }
+}
+@media (min-width: 992px) {
+  #partners-main {
+    .main-center {
+      width: 720px;
+      margin: auto;
+    }
+  }
+}
