@@ -978,6 +978,10 @@ section#masthead #main-carousel .owl-nav .owl-next {
   align-items: center;
 }
 
+#partners-main {
+  position: relative;
+}
+
 #partners-main .main-center {
   text-align: center;
   font-size: 24px;
@@ -985,10 +989,57 @@ section#masthead #main-carousel .owl-nav .owl-next {
   line-height: 36px;
 }
 
+#partners-main .ball-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
+  filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
+}
+
+#partners-main .chess-right {
+  position: absolute;
+  bottom: -250px;
+  right: 0;
+}
+
+#partners-main ._circle-blur {
+  right: -300px;
+  bottom: -250px;
+}
+
+#partners-adv {
+  position: relative;
+}
+
+#partners-adv .adv-item {
+  text-align: center;
+}
+
+#partners-adv .adv-item .item-title {
+  font-size: 24px;
+  line-height: 38px;
+  color: #35ABD3;
+  margin: 35px 0 16px;
+}
+
+#partners-adv .adv-item .item-desc {
+  font-size: 18px;
+  line-height: 1.3;
+  color: #5A6F8F;
+}
+
 @media (min-width: 992px) {
   #partners-main .main-center {
     width: 720px;
     margin: auto;
+  }
+  #partners-adv .col-lg-3 {
+    height: 270px;
+  }
+  #partners-adv .col-lg-3:nth-child(even) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
   }
 }
 
