@@ -928,6 +928,71 @@ section#masthead #main-carousel .owl-nav .owl-next {
   line-height: 96px;
 }
 
+#about-faq .accordion .card {
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+#about-faq .accordion .card .card-header {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom: none;
+  padding: 1.25rem;
+}
+
+#about-faq .accordion .card .card-header .btn {
+  padding: 0;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 38px;
+  color: #13294B;
+  text-transform: none;
+  width: 93%;
+  white-space: normal;
+}
+
+#about-faq .accordion .card .card-header .btn .header-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 1.25rem;
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 100%;
+}
+
+#about-faq .accordion .card .card-header .btn .header-arrow i {
+  color: #FF9E00;
+  font-size: 16px;
+}
+
+#about-faq .accordion .card .card-header button[aria-expanded=true] i {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#about-faq .accordion .card .card-body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #5A6F8F;
+  padding-bottom: 30px;
+}
+
 @media (min-width: 992px) {
   #about-stat .stat-desc {
     max-width: 700px;

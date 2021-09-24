@@ -169,6 +169,60 @@
     }
   }
 }
+#about-faq {
+  .accordion {
+    .card {
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 10px;
+      .card-header {
+        position: relative;
+        background-color: #fff;
+        border-radius: 10px;
+        border-bottom: none;
+        padding: 1.25rem;
+        .btn {
+          padding: 0;
+          text-decoration: none;
+          font-size: 24px;
+          line-height: 38px;
+          color: $dark-blue;
+          text-transform: none;
+          width: 93%;
+          white-space: normal;
+          .header-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 1.25rem;
+            width: 50px;
+            height: 50px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+            border-radius: 100%;
+            i {
+              color: $orange;
+              font-size: 16px;
+            }
+          }
+        }
+        button[aria-expanded=true] i {
+          transform: rotate(-90deg);
+        }
+      }
+      .card-body {
+        font-size: 16px;
+        line-height: 24px;
+        color: #5A6F8F;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
 @media (min-width: 992px) {
   #about-stat {
     .stat-desc {
