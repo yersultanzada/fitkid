@@ -1,4 +1,4 @@
-#programs {
+#programs, #programs-all {
   .program-block {
     display: flex;
     flex-direction: column;
@@ -19,5 +19,24 @@
       line-height: 18px;
       color: #5A6F8F;
     }
+    &:hover {
+
+    }
   }
+}
+#programs-all, #trainers-all {
+  ._title {
+    text-align: left;
+  }
+  .programs-all-desc, .trainers-all-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: #5A6F8F;
+    margin-top: 25px;
+  }
+}
+#programs-solo {
+    ._title {
+      text-align: left;
+    }
 }

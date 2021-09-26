@@ -1,0 +1,54 @@
+#trainers-all {
+  .team-block {
+    margin-bottom: 15px;
+    .block-btn {
+      text-align: center;
+      margin-top: 15px;
+      a {
+        font-size: 12px;
+        color: $orange;
+        background-color: transparent;
+        border-color: $orange;
+        padding: 7px 12px;
+      }
+    }
+    .category-icon {
+      top: 25px;
+      left: 25px;
+      right: auto;
+      width: 40px;
+      height: 40px;
+      img {
+        width: 18px;
+      }
+    }
+  }
+  .trainers-filter {
+    .filter-title {
+      font-size: 18px;
+      font-family: "Gotham Pro Bold", sans-serif;
+      margin-bottom: 20px;
+    }
+    .custom-control {
+      .custom-control-label {
+        font-size: 14px;
+        line-height: 1.2;
+        color: #8D9FBA;
+        margin-top: 10px;
+        cursor: pointer;
+        &:before {
+          border-radius: 4px;
+          background-color: #fff;
+          border: 1px solid #8D9FBA;
+          margin-top: -4px;
+        }
+        &:after {
+          margin-top: -4px;
+        }
+      }
+      .custom-control-input:checked~.custom-control-label:before {
+        background-color: #35ABD3;
+      }
+    }
+  }
+}

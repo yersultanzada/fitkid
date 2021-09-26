@@ -1,4 +1,4 @@
-#news {
+#news, #news-all, #suggest-block {
   .news-item {
     .item-img {
       img {
@@ -27,6 +27,28 @@
         color: $orange;
         font-family: "Gotham Pro Medium", sans-serif;
         margin-right: 7px;
+      }
+    }
+  }
+}
+#news-all, #news-solo {
+  ._title {
+    text-align: left;
+  }
+  .news-item {
+    margin-bottom: 40px;
+  }
+}
+#news-solo {
+  .object-solo-block .block-text {
+    margin-right: 50px;
+  }
+}
+#suggest-block {
+  #news-carousel {
+    .owl-nav {
+      .owl-prev, .owl-next {
+        top: 30%;
       }
     }
   }

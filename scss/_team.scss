@@ -1,58 +1,7 @@
 #team {
-  #team-carousel {
-    position: relative;
-    .item {
-      .carousel-block {
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-        .block-img img {
-          width: 100%;
-          border-radius: 10px;
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
-        .block-name {
-          font-size: 16px;
-          font-family: "Gotham Pro Bold",sans-serif;
-          margin-top: 20px
-        }
-        .block-exp {
-          color: $orange;
-        }
-        .block-desc {
-          margin-top: 12px;
-          color: #5A6F8F;
-          line-height: 18px;
-          min-height: 53px;
-        }
-      }
-    }
-    .owl-nav {
-      display: block;
-      .owl-prev, .owl-next {
-        position: absolute;
-        top: 24%;
-        margin: 0;
-        padding: 0;
-        width: 50px;
-        height: 50px;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        i {
-          color: $orange;
-        }
-      }
-      .owl-prev {
-        left: -25px;
-      }
-      .owl-next {
-        right: -25px;
-      }
+  .owl-carousel .owl-nav {
+    .owl-prev, .owl-next {
+      top: 30%;
     }
   }
 }

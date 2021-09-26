@@ -1,4 +1,4 @@
-#reviews {
+#reviews, #reviews-all, #suggest-block {
   position: relative;
   .review-item {
     background: #FFFFFF;
@@ -40,5 +40,21 @@
     background: linear-gradient(152.85deg, rgba(203, 226, 255, 0.8) 29.1%, rgba(220, 203, 255, 0.8) 87.49%);
     filter: blur(400px);
     z-index: -10;
+  }
+}
+#reviews-all {
+  ._title {
+    text-align: left;
+  }
+  .review-item {
+    margin-bottom: 20px;
+  }
+}
+#reviews-solo {
+  .object-solo-block .block-text .partner-text {
+    display: flex;
+    align-items: flex-end;
+    font-family: "Gotham Pro Medium", sans-serif;
+    margin: 24px 0;
   }
 }

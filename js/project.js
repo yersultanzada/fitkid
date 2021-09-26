@@ -33,7 +33,7 @@
     target: '#mainNav',
     offset: 56
   });
-  $('#main-carousel').owlCarousel({
+  $('#main-carousel, #review-carousel, #news-carousel').owlCarousel({
     items: 3,
     loop:true,
     margin:10,

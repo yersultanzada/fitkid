@@ -1,4 +1,4 @@
-// Global styling for this template
+// fonts
 @font-face {
   font-family: 'Gotham Pro';
   src: url('../fonts/gotham/GothamPro.eot');
@@ -35,7 +35,6 @@ body {
   @include gotham-font;
   background-color: #f9f9f9;
   color: $dark-blue;
-;
 }
 body.js-no-scroll {
   height: 100%;
@@ -49,9 +48,10 @@ p {
 }
 
 a {
-  color: $gray-900;
+  color: $dark-blue;
   &:hover {
-    color: lighten($gray-900, 10%);
+    text-decoration: none;
+    color: inherit;
   }
 }
 ._preloader {
@@ -92,9 +92,6 @@ a {
   margin-top: 60px;
   text-align: center;
 }
-.wt-text-primary {
-  color: $primary-200 !important;
-}
 .wt-block-background {
   position: absolute;
   top: 0;
@@ -129,17 +126,137 @@ h6 {
   text-align: center;
   margin-bottom: 60px;
 }
+.title-btn {
+  color: $orange;
+  font-size: 24px;
+  line-height: 23px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  margin-left: 24px;
+  &:hover {
+    color: darken($orange, 10%);
+  }
+}
+#suggest-block {
+  ._title {
+    text-align: left;
+  }
+  .col {
+    flex-basis: 240px;
+    flex-grow: initial;
+  }
+}
+.team-block {
+  position: relative;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  .block-img img {
+    width: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .block-name {
+    font-size: 16px;
+    font-family: "Gotham Pro Bold",sans-serif;
+    margin-top: 20px;
+    line-height: 1.2;
+  }
+  .block-exp {
+    color: $orange;
+    margin-top: 5px;
+  }
+  .block-desc {
+    margin-top: 12px;
+    color: #5A6F8F;
+    line-height: 18px;
+    min-height: 53px;
+  }
+}
+.category-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: $dark-blue;
+  border-radius: 100%;
+  img {
+    width: 28px;
+  }
+}
+.object-solo-block {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  .block-img img {
+    border-radius: 10px;
+  }
+  .block-text {
+    margin: 24px 150px 24px 50px;
+    .main-text {
+      font-size: 24px;
+      line-height: 23px;
+      font-family: "Gotham Pro Medium", sans-serif;
+      margin-bottom: 24px;
+    }
+    .desc-text {
+      font-size: 16px;
+      line-height: 24px;
+      color: #5A6F8F;
+      ul {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+.owl-carousel {
+  .owl-item img {
+    width: initial;
+  }
+  .owl-nav {
+    display: block !important;
+    .owl-prev, .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
+      color: $orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      &:hover {
+        background-color: #35abd3;
+      }
+    }
+    .owl-prev {
+      left: -25px;
+    }
+    .owl-next {
+      right: -25px;
+    }
+  }
+}
 section {
   padding: 55px 0;
 }
 
 // Button Styles
 .btn {
-  font-size: 14px;
   line-height: 1.2;
   border-radius: 6px;
-  text-transform: uppercase;
-  padding: 15px 50px;
 }
 
 .wt-btn-orange {
@@ -156,22 +273,6 @@ section {
   &:active,
   &:focus {
     box-shadow: none !important;
-  }
-}
-.wt-btn-white {
-  background-color: white;
-  border-color: white;
-  color: $primary-200 !important;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken(white, 7.5%) !important;
-    border-color: darken(white, 7.5%) !important;
-    color: $primary-200 !important;
-  }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
 }
 .wt-btn-transparent {
@@ -215,18 +316,6 @@ img::-moz-selection {
 @media (max-width: 767px) {
   section {
     padding: 40px 0;
-  }
-  section h1.wt-section-heroTitle {
-    font-size: 40px;
-  }
-  section h2.wt-section-title {
-    font-size: 26px;
-  }
-  section h3.wt-section-heading {
-    font-size: 20px;
-  }
-  section p.wt-section-subheading {
-    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
