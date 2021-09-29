@@ -1,7 +1,12 @@
 #programs, #programs-all {
+  .col {
+    flex-basis: 240px;
+    flex-grow: 0;
+  }
   .program-block {
     display: flex;
     flex-direction: column;
+    width: 210px;
     height: 230px;
     justify-content: space-between;
     background-color: #fff;

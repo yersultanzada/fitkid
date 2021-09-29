@@ -170,6 +170,7 @@
   }
 }
 #about-faq {
+  position: relative;
   .accordion {
     .card {
       border-radius: 10px;
@@ -221,6 +222,22 @@
         padding-bottom: 30px;
       }
     }
+  }
+  .ball-left {
+    position: absolute;
+    top: 90px;
+    left: -50px;
+    filter: drop-shadow(-10px 8px 19px rgba(19, 41, 75, 0.25));
+  }
+  ._circle-blur {
+    top: -270px;
+    left: -422px;
+  }
+  .ball-right {
+    position: absolute;
+    bottom: 55px;
+    right: -100px;
+    filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
   }
 }
 @media (min-width: 992px) {

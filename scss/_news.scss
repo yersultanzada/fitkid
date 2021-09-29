@@ -40,8 +40,24 @@
   }
 }
 #news-solo {
-  .object-solo-block .block-text {
-    margin-right: 50px;
+  .news-solo-block {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    .object-solo-block {
+      padding: 0;
+      border-radius: 0;
+      .block-text {
+        margin-right: 50px;
+      }
+    }
+    .block-images {
+      margin-bottom: 30px;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
   }
 }
 #suggest-block {
