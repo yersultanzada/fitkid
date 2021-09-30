@@ -434,6 +434,14 @@ img::-moz-selection {
   padding: 12px 0;
 }
 
+#mainNav .right-items li button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
 #mainNav .right-items li:first-child a:before {
   content: "";
   display: inline-block;
@@ -444,7 +452,7 @@ img::-moz-selection {
   vertical-align: text-bottom;
 }
 
-#mainNav .right-items li:nth-child(2) a:before {
+#mainNav .right-items li:nth-child(2) button:before {
   content: "";
   display: inline-block;
   width: 14px;
@@ -539,6 +547,11 @@ img::-moz-selection {
   display: block;
   padding: 10px 15px;
   color: #13294B;
+}
+
+#registrationModal .modal-dialog .modal-content {
+  border: none;
+  border-radius: 11px;
 }
 
 section#masthead #main-carousel .main-carousel-pt {

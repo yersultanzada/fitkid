@@ -31,6 +31,13 @@
         text-decoration: none;
         padding: 12px 0;
       }
+      button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 12px 0;
+        cursor: pointer;
+      }
       &:first-child a:before {
         content: "";
         display: inline-block;
@@ -40,7 +47,7 @@
         margin-right: 5px;
         vertical-align: text-bottom;
       }
-      &:nth-child(2) a:before {
+      &:nth-child(2) button:before {
         content: "";
         display: inline-block;
         width: 14px;
@@ -124,6 +131,14 @@
       display: block;
       padding: 10px 15px;
       color: $dark-blue;
+    }
+  }
+}
+#registrationModal {
+  .modal-dialog {
+    .modal-content {
+      border: none;
+      border-radius: 11px;
     }
   }
 }
