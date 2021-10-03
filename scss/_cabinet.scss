@@ -1,0 +1,31 @@
+.cabinet-leftMenu {
+  .menu-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 155px;
+    border-radius: 100%;
+    background-color: #E7E9EE;
+    margin: auto;
+    button {
+      display: block;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      line-height: 1.2;
+      color: #5A6F8F;
+    }
+  }
+  .menu-mail {
+    font-family: "Gotham Pro Bold", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+#cabinet-info {
+
+}
