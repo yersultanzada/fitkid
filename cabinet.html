@@ -80,15 +80,74 @@
 <section id="cabinet-info">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 cabinet-leftMenu">
+            <div class="col-lg-3 cabinet-leftMenu">
                 <div class="menu-photo">
                     <form>
-                        <input type="file" id="choose-file" class="filestyle" data-classButton="btn btn-primary" data-input="false" data-classIcon="icon-plus" data-buttonText="Добавить фото">
+                        <input type="file" id="choose-file" class="filestyle">
                     </form>
                 </div>
                 <div class="menu-mail">bbb@gmail.com</div>
+                <ul class="menu-item">
+                    <li>
+                        <a href="#"><img src="img/cabinet/icons/subs.svg" alt="">Мои абонементы</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/cabinet/icons/cart.svg" alt="">Мои покупки</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/cabinet/icons/child.svg" alt="">Мои дети</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/cabinet/icons/payment.svg" alt="">Способ оплаты</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/cabinet/icons/settings.svg" alt="">Настройки</a>
+                    </li>
+                    <li>
+                        <a href="#">Выйти</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-lg-8"></div>
+            <div class="col-lg-9">
+                <div class="cabinet-card">
+                    <div class="_title">Привет, дорогой родитель!</div>
+                    <div class="desc-text">Рады видеть вас! Заполните свои личные данные для лучшего взаимодействия с сайтом FITKID.</div>
+                    <form>
+                        <div class="form-group">
+                            <label for="inputName">Ваше имя <span>*</span></label>
+                            <input type="text" class="form-control" id="inputName">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLastName">Ваша фамилия <span>*</span></label>
+                            <input type="text" class="form-control" id="inputLastName">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">Email <span>*</span></label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTel">Контактный телефон</label>
+                            <input type="tel" class="form-control" id="inputTel" value="+7 778 777 7777" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputChildName">Имя ребенка <span>*</span></label>
+                            <input type="text" class="form-control" id="inputChildName">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLastChildName">Фамилия ребенка <span>*</span></label>
+                            <input type="text" class="form-control" id="inputLastChildName">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDateChild">Дата рождения ребенка <span>*</span></label>
+                            <input type="text" class="form-control" id="inputDateChild">
+                        </div>
+                        <button class="addChild-btn">
+                            Добавить еще ребенка
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -236,7 +295,10 @@
 <!-- Custom scripts for this template -->
 <script src="js/project.min.js"></script>
 <script>
-    $(":file").filestyle();
+    $('#choose-file').filestyle({
+        text : 'Добавить фото',
+        input: false
+    });
 </script>
 </body>
 

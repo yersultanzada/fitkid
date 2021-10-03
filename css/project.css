@@ -1422,7 +1422,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
   margin: auto;
 }
 
-.cabinet-leftMenu .menu-photo button {
+.cabinet-leftMenu .menu-photo .btn {
   display: block;
   background-color: transparent;
   border: none;
@@ -1432,12 +1432,128 @@ section#masthead #main-carousel .owl-nav .owl-next {
   color: #5A6F8F;
 }
 
+.cabinet-leftMenu .menu-photo .btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: transparent;
+  border: none;
+  color: #5A6F8F;
+}
+
+.cabinet-leftMenu .menu-photo .btn-secondary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.cabinet-leftMenu .menu-photo .btn-secondary:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .cabinet-leftMenu .menu-mail {
   font-family: "Gotham Pro Bold", sans-serif;
   font-size: 24px;
   line-height: 1.2;
   text-align: center;
   margin-top: 30px;
+}
+
+.cabinet-leftMenu .menu-item {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.cabinet-leftMenu .menu-item li {
+  margin-bottom: 25px;
+}
+
+.cabinet-leftMenu .menu-item li a {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #5A6F8F;
+}
+
+.cabinet-leftMenu .menu-item li a img {
+  margin-right: 14px;
+  vertical-align: sub;
+}
+
+.cabinet-leftMenu .menu-item li:last-child {
+  margin-bottom: 0;
+}
+
+.cabinet-leftMenu .menu-item li:last-child a {
+  margin-left: 32px;
+}
+
+.cabinet-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.cabinet-card ._title {
+  text-align: left;
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 40px;
+}
+
+.cabinet-card .desc-text {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #5A6F8F;
+}
+
+#cabinet-info form {
+  margin-top: 35px;
+}
+
+#cabinet-info form .form-group {
+  margin-bottom: 24px;
+}
+
+#cabinet-info form .form-group label {
+  color: #8D9FBA;
+  font-family: "Gotham Pro Medium", sans-serif;
+}
+
+#cabinet-info form .form-group label span {
+  color: #FF9E00;
+}
+
+#cabinet-info form .form-group .form-control {
+  background: #F8F8F8;
+  border-radius: 4px;
+  border: none;
+  max-width: 400px;
+}
+
+#cabinet-info form .addChild-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #5A6F8F;
+  cursor: pointer;
+}
+
+#cabinet-info form .addChild-btn:before {
+  content: "+";
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  background-color: #5A6F8F;
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 16px;
+  margin-right: 8px;
+  color: #fff;
+  border-radius: 100%;
+  line-height: 21px;
+}
+
+@media (min-width: 992px) {
+  .cabinet-card .desc-text {
+    width: 700px;
+  }
 }
 
 section#footer {

@@ -8,7 +8,7 @@
     border-radius: 100%;
     background-color: #E7E9EE;
     margin: auto;
-    button {
+    .btn {
       display: block;
       background-color: transparent;
       border: none;
@@ -16,6 +16,17 @@
       font-size: 16px;
       line-height: 1.2;
       color: #5A6F8F;
+    }
+    .btn-secondary:not(:disabled):not(.disabled):active {
+      background-color: transparent;
+      border: none;
+      color: #5A6F8F;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .btn-secondary:focus {
+      box-shadow: none;
     }
   }
   .menu-mail {
@@ -25,7 +36,89 @@
     text-align: center;
     margin-top: 30px;
   }
+  .menu-item {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+    li {
+      margin-bottom: 25px;
+      a {
+        font-size: 14px;
+        line-height: 1.2;
+        color: #5A6F8F;
+        img {
+          margin-right: 14px;
+          vertical-align: sub;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+        a {
+          margin-left: 32px;
+        }
+      }
+    }
+  }
+}
+.cabinet-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  ._title {
+    text-align: left;
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 40px;
+  }
+  .desc-text {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #5A6F8F;
+  }
 }
 #cabinet-info {
-
+  form {
+    margin-top: 35px;
+    .form-group {
+      margin-bottom: 24px;
+      label {
+        color: #8D9FBA;
+        font-family: "Gotham Pro Medium", sans-serif;
+        span {
+          color: $orange;
+        }
+      }
+      .form-control {
+        background: #F8F8F8;
+        border-radius: 4px;
+        border: none;
+        max-width: 400px;
+      }
+    }
+    .addChild-btn {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #5A6F8F;
+      cursor: pointer;
+      &:before {
+        content: "+";
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        background-color: #5A6F8F;
+        font-family: "Gotham Pro Medium", sans-serif;
+        font-size: 16px;
+        margin-right: 8px;
+        color: #fff;
+        border-radius: 100%;
+        line-height: 21px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .cabinet-card .desc-text {
+    width: 700px;
+  }
 }
