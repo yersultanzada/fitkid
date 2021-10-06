@@ -1503,6 +1503,35 @@ section#masthead #main-carousel .owl-nav .owl-next {
   color: #5A6F8F;
 }
 
+.cabinet-card .bottom-btn {
+  margin-top: 40px;
+}
+
+.cabinet-card .bottom-btn button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+.cabinet-card .bottom-btn button.save-btn {
+  background-color: #FF9E00;
+  border: 1px solid #FF9E00;
+  color: #fff;
+}
+
+.cabinet-card .bottom-btn button.cancel-btn {
+  background-color: transparent;
+  margin-left: 30px;
+  border: 1px solid transparent;
+  color: #FF9E00;
+}
+
+.cabinet-card .bottom-btn button.cancel-btn:hover {
+  border-color: #FF9E00;
+}
+
 #cabinet-info form {
   margin-top: 35px;
 }
