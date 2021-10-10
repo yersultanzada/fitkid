@@ -1422,12 +1422,23 @@ section#masthead #main-carousel .owl-nav .owl-next {
   margin: auto;
 }
 
+.cabinet-leftMenu .menu-photo img {
+  width: 100%;
+  border-radius: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+  border: 8px solid #fff;
+}
+
 .cabinet-leftMenu .menu-photo .btn {
   display: block;
   background-color: transparent;
   border: none;
   outline: none;
   font-size: 16px;
+  font-family: "Gotham Pro Medium", sans-serif;
   line-height: 1.2;
   color: #5A6F8F;
 }
@@ -1472,8 +1483,8 @@ section#masthead #main-carousel .owl-nav .owl-next {
   color: #5A6F8F;
 }
 
-.cabinet-leftMenu .menu-item li a img {
-  margin-right: 14px;
+.cabinet-leftMenu .menu-item li a svg {
+  margin-right: 9px;
   vertical-align: sub;
 }
 
@@ -1485,89 +1496,94 @@ section#masthead #main-carousel .owl-nav .owl-next {
   margin-left: 32px;
 }
 
-.cabinet-card {
+.cabinet-leftMenu .menu-item li.active a {
+  color: #FF9E00;
+}
+
+.cabinet-leftMenu .menu-item li.active a svg path {
+  fill: #FF9E00;
+}
+
+.cabinet .cabinet-card {
+  position: relative;
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
 }
 
-.cabinet-card ._title {
+.cabinet .cabinet-card .card-back-btn {
+  display: inline-block;
+  color: #FF9E00;
+  margin-bottom: 5px;
+}
+
+.cabinet .cabinet-card .card-back-btn:before {
+  content: "<";
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.cabinet .cabinet-card ._title {
   text-align: left;
   border-bottom: 1px solid #ECECEC;
   padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.cabinet-card .desc-text {
+.cabinet .cabinet-card .desc-text {
   font-size: 16px;
   line-height: 1.2;
   color: #5A6F8F;
 }
 
-.cabinet-card .bottom-btn {
-  margin-top: 40px;
-}
-
-.cabinet-card .bottom-btn button {
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 10px 30px;
-}
-
-.cabinet-card .bottom-btn button.save-btn {
-  background-color: #FF9E00;
-  border: 1px solid #FF9E00;
-  color: #fff;
-}
-
-.cabinet-card .bottom-btn button.cancel-btn {
-  background-color: transparent;
-  margin-left: 30px;
-  border: 1px solid transparent;
-  color: #FF9E00;
-}
-
-.cabinet-card .bottom-btn button.cancel-btn:hover {
-  border-color: #FF9E00;
-}
-
-#cabinet-info form {
+.cabinet .cabinet-card form {
   margin-top: 35px;
 }
 
-#cabinet-info form .form-group {
+.cabinet .cabinet-card form .form-group {
   margin-bottom: 24px;
 }
 
-#cabinet-info form .form-group label {
+.cabinet .cabinet-card form .form-group label {
   color: #8D9FBA;
   font-family: "Gotham Pro Medium", sans-serif;
 }
 
-#cabinet-info form .form-group label span {
+.cabinet .cabinet-card form .form-group label span {
   color: #FF9E00;
 }
 
-#cabinet-info form .form-group .form-control {
+.cabinet .cabinet-card form .form-group .form-control {
   background: #F8F8F8;
   border-radius: 4px;
   border: none;
   max-width: 400px;
 }
 
-#cabinet-info form .addChild-btn {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #5A6F8F;
-  cursor: pointer;
+.cabinet .cabinet-card form .form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #F8F8F8 url(../img/cabinet/icons/select-icon.svg) right 0.75rem center/8px 16px no-repeat !important;
 }
 
-#cabinet-info form .addChild-btn:before {
+.cabinet .cabinet-card .add-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cabinet .cabinet-card .add-btn:before {
   content: "+";
-  display: inline-block;
-  vertical-align: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   background-color: #5A6F8F;
@@ -1576,11 +1592,56 @@ section#masthead #main-carousel .owl-nav .owl-next {
   margin-right: 8px;
   color: #fff;
   border-radius: 100%;
-  line-height: 21px;
+}
+
+.cabinet .cabinet-card .cabinet-btn {
+  margin-top: 40px;
+}
+
+.cabinet .cabinet-card .cabinet-btn button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+.cabinet .cabinet-card .cabinet-btn button.save-btn {
+  background-color: #FF9E00;
+  border: 1px solid #FF9E00;
+  color: #fff;
+}
+
+.cabinet .cabinet-card .cabinet-btn button.cancel-btn {
+  background-color: transparent;
+  margin-left: 30px;
+  border: 1px solid transparent;
+  color: #FF9E00;
+}
+
+.cabinet .cabinet-card .cabinet-btn button.cancel-btn:hover {
+  border-color: #FF9E00;
+}
+
+.cabinet .cabinet-card .add-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 440px;
+  height: 247px;
+  border: 1px dashed #5A6F8F;
+  border-radius: 10px;
+  margin-top: 24px;
 }
 
 @media (min-width: 992px) {
-  .cabinet-card .desc-text {
+  .cabinet .cabinet-card .desc-text {
     width: 700px;
   }
 }

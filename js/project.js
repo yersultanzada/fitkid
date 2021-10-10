@@ -79,4 +79,9 @@
     }
   });
 
+  $('#choose-file').filestyle({
+    text : 'Добавить фото',
+    input: false
+  });
+
 })(jQuery); // End of use strict

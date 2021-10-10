@@ -8,12 +8,20 @@
     border-radius: 100%;
     background-color: #E7E9EE;
     margin: auto;
+    img {
+      width: 100%;
+      border-radius: 100%;
+      object-fit: cover;
+      filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+      border: 8px solid #fff;
+    }
     .btn {
       display: block;
       background-color: transparent;
       border: none;
       outline: none;
       font-size: 16px;
+      font-family: "Gotham Pro Medium", sans-serif;
       line-height: 1.2;
       color: #5A6F8F;
     }
@@ -46,8 +54,8 @@
         font-size: 14px;
         line-height: 1.2;
         color: #5A6F8F;
-        img {
-          margin-right: 14px;
+        svg {
+          margin-right: 9px;
           vertical-align: sub;
         }
       }
@@ -57,77 +65,74 @@
           margin-left: 32px;
         }
       }
-    }
-  }
-}
-.cabinet-card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 30px;
-  ._title {
-    text-align: left;
-    border-bottom: 1px solid #ECECEC;
-    padding-bottom: 40px;
-  }
-  .desc-text {
-    font-size: 16px;
-    line-height: 1.2;
-    color: #5A6F8F;
-  }
-  .bottom-btn {
-    margin-top: 40px;
-    button {
-      border: none;
-      outline: none;
-      border-radius: 4px;
-      cursor: pointer;
-      padding: 10px 30px;
-      &.save-btn {
-        background-color: $orange;
-        border: 1px solid $orange;
-        color: #fff;
-      }
-      &.cancel-btn {
-        background-color: transparent;
-        margin-left: 30px;
-        border: 1px solid transparent;
-        color: $orange;
-        &:hover {
-          border-color: $orange;
-        }
-      }
-    }
-  }
-}
-#cabinet-info {
-  form {
-    margin-top: 35px;
-    .form-group {
-      margin-bottom: 24px;
-      label {
-        color: #8D9FBA;
-        font-family: "Gotham Pro Medium", sans-serif;
-        span {
+      &.active {
+        a {
           color: $orange;
+          svg path {
+            fill: $orange;
+          }
         }
       }
-      .form-control {
-        background: #F8F8F8;
-        border-radius: 4px;
-        border: none;
-        max-width: 400px;
+    }
+  }
+}
+.cabinet {
+  .cabinet-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    .card-back-btn {
+      display: inline-block;
+      color: $orange;
+      margin-bottom: 5px;
+      &:before {
+        content: "<";
+        display: inline-block;
+        margin-right: 5px;
       }
     }
-    .addChild-btn {
-      background: transparent;
-      border: none;
-      outline: none;
+    ._title {
+      text-align: left;
+      border-bottom: 1px solid #ECECEC;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+    }
+    .desc-text {
+      font-size: 16px;
+      line-height: 1.2;
       color: #5A6F8F;
-      cursor: pointer;
+    }
+    form {
+      margin-top: 35px;
+      .form-group {
+        margin-bottom: 24px;
+        label {
+          color: #8D9FBA;
+          font-family: "Gotham Pro Medium", sans-serif;
+          span {
+            color: $orange;
+          }
+        }
+        .form-control {
+          background: #F8F8F8;
+          border-radius: 4px;
+          border: none;
+          max-width: 400px;
+        }
+        select {
+          appearance: none;
+          background: #F8F8F8 url(../img/cabinet/icons/select-icon.svg) right .75rem center/8px 16px no-repeat !important;
+        }
+      }
+    }
+    .add-btn {
+      display: flex;
       &:before {
         content: "+";
-        display: inline-block;
-        vertical-align: top;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 20px;
         height: 20px;
         background-color: #5A6F8F;
@@ -136,13 +141,46 @@
         margin-right: 8px;
         color: #fff;
         border-radius: 100%;
-        line-height: 21px;
       }
+    }
+    .cabinet-btn {
+      margin-top: 40px;
+      button {
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        cursor: pointer;
+        padding: 10px 30px;
+        &.save-btn {
+          background-color: $orange;
+          border: 1px solid $orange;
+          color: #fff;
+        }
+        &.cancel-btn {
+          background-color: transparent;
+          margin-left: 30px;
+          border: 1px solid transparent;
+          color: $orange;
+          &:hover {
+            border-color: $orange;
+          }
+        }
+      }
+    }
+    .add-element {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 440px;
+      height: 247px;
+      border: 1px dashed #5A6F8F;
+      border-radius: 10px;
+      margin-top: 24px;
     }
   }
 }
 @media (min-width: 992px) {
-  .cabinet-card .desc-text {
+  .cabinet .cabinet-card .desc-text {
     width: 700px;
   }
 }
