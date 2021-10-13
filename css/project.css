@@ -309,6 +309,38 @@ h6 {
   right: -25px;
 }
 
+form {
+  margin-top: 35px;
+}
+
+form .form-group {
+  margin-bottom: 24px;
+}
+
+form .form-group label {
+  color: #8D9FBA;
+  font-family: "Gotham Pro Medium", sans-serif;
+}
+
+form .form-group label span {
+  color: #FF9E00;
+}
+
+form .form-group .form-control {
+  background: #F8F8F8;
+  border-radius: 4px;
+  border: none;
+  max-width: 400px;
+  height: 44px;
+}
+
+form .form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #F8F8F8 url(../img/cabinet/icons/select-icon.svg) right 0.75rem center/8px 16px no-repeat !important;
+}
+
 section {
   padding: 55px 0;
 }
@@ -549,9 +581,127 @@ img::-moz-selection {
   color: #13294B;
 }
 
-#registrationModal .modal-dialog .modal-content {
+.popup-modal .modal-dialog {
+  max-width: 400px;
+}
+
+.popup-modal .modal-dialog .modal-content {
   border: none;
   border-radius: 11px;
+  -webkit-filter: drop-shadow(0px 0px 42px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 0px 42px rgba(0, 0, 0, 0.16));
+  padding: 28px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-header {
+  padding: 0;
+  border: none;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-header .close {
+  text-shadow: none;
+  opacity: 1;
+  color: inherit;
+  font-size: inherit;
+  padding: 3px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-header .close:focus {
+  outline: none;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body .popup-img {
+  margin-bottom: 20px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body .popup-main_text {
+  font-size: 16px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  line-height: 20px;
+  text-align: center;
+  padding: 0 25px;
+  margin-bottom: 17px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body .popup-secondary_text {
+  font-family: "Gotham Pro Medium", sans-serif;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form {
+  margin-top: 18px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .form-group .form-control {
+  background: #efefef;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .form-group .form-control::-webkit-input-placeholder {
+  text-align: center;
+  color: #5A6F8F;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .form-group .form-control:-ms-input-placeholder {
+  text-align: center;
+  color: #5A6F8F;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .form-group .form-control::-ms-input-placeholder {
+  text-align: center;
+  color: #5A6F8F;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .form-group .form-control::placeholder {
+  text-align: center;
+  color: #5A6F8F;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox {
+  margin-top: 20px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-label a {
+  color: #FF9E00;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-label:before {
+  top: 0.15rem;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-label:after {
+  top: 0.15rem;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #FF9E00;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body .popup-btn {
+  background-color: #FF9E00;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 17px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  line-height: inherit;
+}
+
+.popup-modal.added-type .modal-dialog .modal-content .modal-body .popup-img {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.popup-modal.added-type .modal-dialog .modal-content .modal-body .popup-main_text {
+  margin-bottom: 50px;
 }
 
 section#masthead #main-carousel .main-carousel-pt {
@@ -688,6 +838,10 @@ section#masthead #main-carousel .owl-nav .owl-next {
 
 #programs-solo ._title {
   text-align: left;
+}
+
+#map img {
+  width: 100%;
 }
 
 #callToAction .wt-background-headerImg, #partners-callToAction .wt-background-headerImg {
@@ -1536,41 +1690,80 @@ section#masthead #main-carousel .owl-nav .owl-next {
   color: #5A6F8F;
 }
 
-.cabinet .cabinet-card form {
-  margin-top: 35px;
+.cabinet .cabinet-card .card-element {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
 }
 
-.cabinet .cabinet-card form .form-group {
-  margin-bottom: 24px;
+.cabinet .cabinet-card .card-element .element-title {
+  font-size: 18px;
+  font-family: "Gotham Pro Bold", sans-serif;
+  line-height: 1.3;
+  margin-bottom: 5px;
 }
 
-.cabinet .cabinet-card form .form-group label {
-  color: #8D9FBA;
+.cabinet .cabinet-card .card-element .element-status {
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 16px;
+}
+
+.cabinet .cabinet-card .card-element .element-status.inactive {
+  background-color: #CCCCCC;
+}
+
+.cabinet .cabinet-card .card-element .element-status.active {
+  background-color: #FF9E00;
+}
+
+.cabinet .cabinet-card .card-element .category-icon {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-right: 20px;
+}
+
+.cabinet .cabinet-card .card-element .element-info {
+  margin-top: 30px;
+}
+
+.cabinet .cabinet-card .card-element .element-info .info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cabinet .cabinet-card .card-element .element-info .info-item div:nth-child(2) {
   font-family: "Gotham Pro Medium", sans-serif;
 }
 
-.cabinet .cabinet-card form .form-group label span {
+.cabinet .cabinet-card .card-element .element-info .text-right a, .cabinet .cabinet-card .card-element .element-info .text-right span {
+  font-size: 12px;
   color: #FF9E00;
+  font-family: "Gotham Pro Medium", sans-serif;
 }
 
-.cabinet .cabinet-card form .form-group .form-control {
-  background: #F8F8F8;
-  border-radius: 4px;
-  border: none;
-  max-width: 400px;
+.cabinet .cabinet-card .card-element.inactive {
+  background-color: #F9F9F9;
 }
 
-.cabinet .cabinet-card form .form-group select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #F8F8F8 url(../img/cabinet/icons/select-icon.svg) right 0.75rem center/8px 16px no-repeat !important;
+.cabinet .cabinet-card .card-element.active {
+  background-color: #FFF1DB;
 }
 
 .cabinet .cabinet-card .add-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .cabinet .cabinet-card .add-btn:before {
@@ -1633,11 +1826,14 @@ section#masthead #main-carousel .owl-nav .owl-next {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 440px;
   height: 247px;
   border: 1px dashed #5A6F8F;
   border-radius: 10px;
   margin-top: 24px;
+}
+
+#cabinet-subs .add-element {
+  margin-top: 0;
 }
 
 @media (min-width: 992px) {

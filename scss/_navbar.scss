@@ -134,11 +134,100 @@
     }
   }
 }
-#registrationModal {
+.popup-modal {
   .modal-dialog {
+    max-width: 400px;
     .modal-content {
       border: none;
       border-radius: 11px;
+      filter: drop-shadow(0px 0px 42px rgba(0, 0, 0, 0.16));
+      padding: 28px;
+      .modal-header {
+        padding: 0;
+        border: none;
+        .close {
+          text-shadow: none;
+          opacity: 1;
+          color: inherit;
+          font-size: inherit;
+          padding: 3px;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .modal-body {
+        padding: 0;
+        .popup-img {
+          margin-bottom: 20px;
+        }
+        .popup-main_text {
+          font-size: 16px;
+          font-family: "Gotham Pro Medium", sans-serif;
+          line-height: 20px;
+          text-align: center;
+          padding: 0 25px;
+          margin-bottom: 17px;
+        }
+        .popup-secondary_text {
+          font-family: "Gotham Pro Medium", sans-serif;
+          text-align: center;
+          padding-top: 10px;
+        }
+        form {
+          margin-top: 18px;
+          .form-group {
+            .form-control {
+              background: #efefef;
+              &::placeholder {
+                text-align: center;
+                color: #5A6F8F;
+              }
+            }
+          }
+          .custom-checkbox {
+            margin-top: 20px;
+            .custom-control-label {
+              a {
+                color: $orange;
+              }
+              &:before {
+                top: 0.15rem;
+              }
+              &:after {
+                top: 0.15rem;
+              }
+            }
+            .custom-control-input:checked~.custom-control-label::before {
+              background-color: $orange;
+            }
+          }
+        }
+        .popup-btn {
+          background-color: $orange;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          width: 100%;
+          color: #fff;
+          padding: 10px 0;
+          border-radius: 4px;
+          font-size: 17px;
+          font-family: "Gotham Pro Medium", sans-serif;
+          line-height: inherit;
+        }
+      }
+    }
+  }
+  &.added-type {
+    .modal-dialog .modal-content .modal-body {
+      .popup-img {
+        margin-bottom: 40px;
+        margin-top: 30px;
+      }
+      .popup-main_text {
+        margin-bottom: 50px;
+      }
     }
   }
 }

@@ -625,26 +625,47 @@
 </section>
 
 <!-- registration-->
-<div class="modal fade" id="registrationModal" tabindex="-1" aria-hidden="true">
+<div id="registrationModal" class="popup-modal modal fade" tabindex="-1" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.88393 8.001L15.8169 1.06795C16.061 0.823858 16.061 0.428108 15.8169 0.184046C15.5729 -0.0600155 15.1771 -0.0600467 14.933 0.184046L7.99999 7.11709L1.06697 0.184046C0.822881 -0.0600467 0.427132 -0.0600467 0.18307 0.184046C-0.0609921 0.42814 -0.0610233 0.823889 0.18307 1.06795L7.11609 8.00097L0.18307 14.934C-0.0610233 15.1781 -0.0610233 15.5739 0.18307 15.8179C0.305101 15.9399 0.465069 16.0009 0.625038 16.0009C0.785006 16.0009 0.944944 15.9399 1.06701 15.8179L7.99999 8.8849L14.933 15.8179C15.055 15.9399 15.215 16.0009 15.375 16.0009C15.5349 16.0009 15.6949 15.9399 15.8169 15.8179C16.061 15.5738 16.061 15.1781 15.8169 14.934L8.88393 8.001Z" fill="#13294B"/>
+					</svg>
 				</button>
 			</div>
 			<div class="modal-body">
-				...
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
+				<div class="text-center">
+					<img src="img/main/popup-logo.svg" class="popup-img" alt="">
+				</div>
+				<div class="popup-main_text">
+					Войдите или создайте аккаунт FITKID!
+				</div>
+				<div class="popup-secondary_text">
+					Ваш номер телефона
+				</div>
+				<form>
+					<fieldset>
+						<div class="form-group">
+							<input type="tel" class="form-control tel" placeholder="+7 000 123 45 67">
+						</div>
+						<button class="btn popup-btn">
+							Подтвердить
+						</button>
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="popupCheck" checked>
+							<label class="custom-control-label" for="popupCheck">Я согласен с <a href="#" target="_blank">договором для пользователя</a></label>
+						</div>
+						<!--Если человек убирает чек, добавить в <fieldset disabled>-->
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</div>
 </div>
 <!-- menuModal-->
-<div class="menu-modal modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div id="menuModal" class="menu-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
