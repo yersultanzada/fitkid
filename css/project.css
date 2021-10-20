@@ -1619,6 +1619,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
   line-height: 1.2;
   text-align: center;
   margin-top: 30px;
+  word-wrap: break-word;
 }
 
 .cabinet-leftMenu .menu-item {
@@ -1688,12 +1689,15 @@ section#masthead #main-carousel .owl-nav .owl-next {
   font-size: 16px;
   line-height: 1.2;
   color: #5A6F8F;
+  margin-bottom: 30px;
 }
 
 .cabinet .cabinet-card .card-element {
+  position: relative;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 30px;
+  background-color: #F9F9F9;
 }
 
 .cabinet .cabinet-card .card-element .element-title {
@@ -1710,9 +1714,6 @@ section#masthead #main-carousel .owl-nav .owl-next {
   padding: 5px 10px;
   color: #fff;
   border-radius: 16px;
-}
-
-.cabinet .cabinet-card .card-element .element-status.inactive {
   background-color: #CCCCCC;
 }
 
@@ -1751,12 +1752,61 @@ section#masthead #main-carousel .owl-nav .owl-next {
   font-family: "Gotham Pro Medium", sans-serif;
 }
 
-.cabinet .cabinet-card .card-element.inactive {
+.cabinet .cabinet-card .card-element.active {
+  background-color: #FFF1DB;
+}
+
+.cabinet .cabinet-card .card-element .dropleft {
+  position: absolute;
+  top: 2px;
+  right: 11px;
+}
+
+.cabinet .cabinet-card .card-element .dropleft .btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 6px;
+}
+
+.cabinet .cabinet-card .card-element .dropleft .btn:before {
+  content: none;
+}
+
+.cabinet .cabinet-card .card-element .dropleft .dropdown-menu {
+  border: none;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 0;
+  min-width: 145px;
+  top: 16px !important;
+  left: 4px !important;
+}
+
+.cabinet .cabinet-card .card-element .dropleft .dropdown-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.cabinet .cabinet-card .card-element .dropleft .dropdown-menu ul li a {
+  font-size: 12px;
+  display: block;
+  padding: 10px 0;
+  color: #5A6F8F;
+}
+
+.cabinet .cabinet-card .card-element .dropleft .dropdown-menu ul li:first-child {
   background-color: #F9F9F9;
 }
 
-.cabinet .cabinet-card .card-element.active {
-  background-color: #FFF1DB;
+.cabinet .cabinet-card .card-element .dropleft .dropdown-menu ul li:last-child a {
+  color: #D45345;
+  padding: 12px 0;
 }
 
 .cabinet .cabinet-card .add-btn {
@@ -1826,14 +1876,227 @@ section#masthead #main-carousel .owl-nav .owl-next {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 247px;
+  height: 221px;
   border: 1px dashed #5A6F8F;
   border-radius: 10px;
-  margin-top: 24px;
 }
 
-#cabinet-subs .add-element {
+.cabinet .cabinet-card .history-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cabinet .cabinet-card .history-table .table-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #5A6F8F;
+  font-family: "Gotham Pro Medium", sans-serif;
+  padding: 20px 30px;
+  min-width: 910px;
+}
+
+.cabinet .cabinet-card .history-table .table-body {
+  border: 1px solid #ECECEC;
+  border-radius: 4px;
+  padding: 40px 30px;
+  min-width: 910px;
+}
+
+.cabinet .cabinet-card .history-table .table-body .table-body-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Gotham Pro Medium", sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ECECEC;
+  word-wrap: break-word;
+}
+
+.cabinet .cabinet-card .history-table .table-body .table-body-row:last-child {
+  border-bottom: none;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(1), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(1) {
+  width: 125px;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(2), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(2) {
+  width: 160px;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(3), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(3) {
+  width: 80px;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(4), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(4) {
+  width: 100px;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(5), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(5) {
+  width: 50px;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(5), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(5) {
+  width: 50px;
+}
+
+.cabinet .cabinet-card .history-table .table-head div:nth-child(6), .cabinet .cabinet-card .history-table .table-body-row div:nth-child(6) {
+  width: 70px;
+}
+
+.cabinet .cabinet-card .change-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.cabinet .cabinet-card .change-photo img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 5px solid #FFFFFF;
+  -webkit-filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
+}
+
+.cabinet .cabinet-card .change-photo form {
+  margin-top: 20px;
+}
+
+.cabinet .cabinet-card .change-photo form .btn {
+  background-color: transparent;
+  color: #FF9E00;
+  font-size: 16px;
+  font-family: "Gotham Pro Medium", sans-serif;
+  border: none;
+  margin-left: -25px;
+}
+
+.cabinet .cabinet-card .settings-subtitle {
+  font-size: 18px;
+  font-family: "Gotham Pro Bold", sans-serif;
+  margin-top: 70px;
+}
+
+.cabinet .cabinet-card .settings-form .form-control {
+  max-width: 100%;
+}
+
+.cabinet .cabinet-card .settings-form input[type=text], .cabinet .cabinet-card .settings-form input[type=email] {
+  background: #f8f8f8 url(../img/cabinet/icons/pencil.svg) right 0.75rem center/18px 18px no-repeat !important;
+}
+
+.cabinet .cabinet-card .settings-form input[disabled] {
+  color: #8D9FBA;
+}
+
+.cabinet .cabinet-card .change-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cabinet .cabinet-card .change-password .settings-subtitle {
   margin-top: 0;
+}
+
+.cabinet .cabinet-card .change-password button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #FF9E00;
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 16px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group {
+  position: relative;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group input {
+  background-image: none !important;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group input::-webkit-input-placeholder {
+  color: #8D9FBA;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group input:-ms-input-placeholder {
+  color: #8D9FBA;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group input::-ms-input-placeholder {
+  color: #8D9FBA;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group input::placeholder {
+  color: #8D9FBA;
+}
+
+.cabinet .cabinet-card .change-pass-form .form-group img {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.cabinet .cabinet-card .change-pass-form .show-new-fields {
+  display: none;
+}
+
+.cabinet .cabinet-card .change-pass-form .show-new-fields.show {
+  display: block;
+}
+
+.cabinet .cabinet-card .change-pass-form .show-new-fields .form-group:last-child {
+  margin-bottom: 10px;
+}
+
+.cabinet .cabinet-card .change-pass-form .show-new-fields span {
+  font-size: 12px;
+  color: #FF9E00;
+  line-height: 1.3;
+}
+
+.cabinet .cabinet-card .change-pass-form .cabinet-btn {
+  display: none;
+}
+
+.cabinet .cabinet-card .change-pass-form .cabinet-btn.show {
+  display: block;
+}
+
+#cabinet-child .cabinet-card .card-element .element-info .info-item div:nth-child(2) {
+  color: #5A6F8F;
+}
+
+.datepicker td, .datepicker th {
+  width: 40px;
+  height: 30px;
+}
+
+.datepicker-months td, .datepicker-years td, .datepicker-months th, .datepicker-years th {
+  width: 67px;
+  height: 45px;
 }
 
 @media (min-width: 992px) {

@@ -79,9 +79,29 @@
     }
   });
 
-  $('#choose-file').filestyle({
+  $('#add-photo').filestyle({
     text : 'Добавить фото',
     input: false
   });
+  $('#change-photo').filestyle({
+    text : 'Изменить фото',
+    input: false
+  });
+
+  $('.change-password button').on('click', function () {
+    $('.change-password button').css({
+      'display': 'none'
+    });
+    $('.show-new-fields').addClass('show');
+    $('.change-pass-form .cabinet-btn').addClass('show');
+  })
+
+  $('.change-pass-form .cancel-btn').on('click', function () {
+    $('.show-new-fields').removeClass('show');
+    $('.change-pass-form .cabinet-btn').removeClass('show');
+    $('.change-password button').css({
+      'display': 'block'
+    });
+  })
 
 })(jQuery); // End of use strict

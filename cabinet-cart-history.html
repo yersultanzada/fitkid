@@ -71,14 +71,14 @@
 					</li>
 					<li class="breadcrumb-item"><a href="/">Главная</a></li>
 					<li class="breadcrumb-item"><a href="/">Личный кабинет</a></li>
-					<li class="breadcrumb-item active" aria-current="page"><span>Мои абонементы</span></li>
+					<li class="breadcrumb-item active" aria-current="page"><span>История покупок</span></li>
 				</ol>
 			</div>
 		</div>
 	</div>
 </nav>
 <!-- About -->
-<section class="cabinet" id="cabinet-subs">
+<section class="cabinet" id="cabinet-cart-history">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-2 cabinet-leftMenu">
@@ -87,7 +87,7 @@
 				</div>
 				<div class="menu-mail">Валерия</div>
 				<ul class="menu-item">
-					<li class="active">
+					<li>
 						<a href="#">
 							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M14.25 10.5V4.5C14.25 3.675 13.575 3 12.75 3H2.25C1.425 3 0.75 3.675 0.75 4.5V10.5C0.75 11.325 1.425 12 2.25 12H12.75C13.575 12 14.25 11.325 14.25 10.5ZM12.75 10.5H2.25V4.5H12.75V10.5ZM7.5 5.25C6.255 5.25 5.25 6.255 5.25 7.5C5.25 8.745 6.255 9.75 7.5 9.75C8.745 9.75 9.75 8.745 9.75 7.5C9.75 6.255 8.745 5.25 7.5 5.25ZM17.25 5.25V13.5C17.25 14.325 16.575 15 15.75 15H3C3 14.25 3 14.325 3 13.5H15.75V5.25C16.575 5.25 16.5 5.25 17.25 5.25Z" fill="#5A6F8F"/>
@@ -95,7 +95,7 @@
 							Мои абонементы
 						</a>
 					</li>
-					<li>
+					<li class="active">
 						<a href="#">
 							<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11.6625 9.75C12.225 9.75 12.72 9.4425 12.975 8.9775L15.66 4.11C15.9375 3.615 15.5775 3 15.0075 3H3.9075L3.2025 1.5H0.75V3H2.25L4.95 8.6925L3.9375 10.5225C3.39 11.5275 4.11 12.75 5.25 12.75H14.25V11.25H5.25L6.075 9.75H11.6625ZM4.62 4.5H13.7325L11.6625 8.25H6.3975L4.62 4.5ZM5.25 13.5C4.425 13.5 3.7575 14.175 3.7575 15C3.7575 15.825 4.425 16.5 5.25 16.5C6.075 16.5 6.75 15.825 6.75 15C6.75 14.175 6.075 13.5 5.25 13.5ZM12.75 13.5C11.925 13.5 11.2575 14.175 11.2575 15C11.2575 15.825 11.925 16.5 12.75 16.5C13.575 16.5 14.25 15.825 14.25 15C14.25 14.175 13.575 13.5 12.75 13.5Z" fill="#5A6F8F"/>
@@ -134,82 +134,43 @@
 			</div>
 			<div class="col-lg-10">
 				<div class="cabinet-card">
-					<div class="_title">Мои абонементы</div>
-					<div class="desc-text">У вас пока нет активных абонементов! Добавьте абонемент, если вы уже посещаете наши секции.</div>
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="card-element">
-								<div class="d-flex">
-									<div class="category-icon">
-										<img src="img/programs/icons/2.svg" alt="">
-									</div>
-									<div>
-										<div class="element-title">Художественная гимнастика</div>
-										<div class="element-status">Не активный</div>
-									</div>
-								</div>
-								<div class="element-info">
-									<div class="info-item">
-										<div class="element-org">Детское учреждение</div>
-										<div class="org-name">Amanat kids</div>
-									</div>
-									<div class="info-item">
-										<div class="element-child">Ребенок</div>
-										<div class="child-name">Алуа</div>
-									</div>
-									<div class="info-item">
-										<div class="element-trainer">Тренер</div>
-										<div class="trainer-name">Едиль Аргымбаев</div>
-									</div>
-									<div class="info-item">
-										<div class="element-date">Срок</div>
-										<div class="date-name">Не выбрано</div>
-									</div>
-									<div class="text-right">
-										<a href="#">Оплатить абонемент</a>
-									</div>
-								</div>
-							</div>
+					<div class="_title">История покупок</div>
+					<!--Если нет истории показываем этот текст-->
+					<div class="desc-text">В вашей истории пока нет покупок!</div>
+					<!--------------->
+					<div class="history-table">
+						<div class="table-head">
+							<div>Направление</div>
+							<div>Детское учреждение</div>
+							<div>Ребенок</div>
+							<div>Дата оплаты</div>
+							<div>Срок</div>
+							<div>Цена</div>
 						</div>
-						<div class="col-lg-6">
-							<div class="card-element active">
-								<div class="d-flex">
-									<div class="category-icon">
-										<img src="img/programs/icons/1.svg" alt="">
-									</div>
-									<div>
-										<div class="element-title">Художественная гимнастика</div>
-										<div class="element-status active">Активный</div>
-									</div>
-								</div>
-								<div class="element-info">
-									<div class="info-item">
-										<div class="element-org">Детское учреждение</div>
-										<div class="org-name">Amanat kids</div>
-									</div>
-									<div class="info-item">
-										<div class="element-child">Ребенок</div>
-										<div class="child-name">Алуа</div>
-									</div>
-									<div class="info-item">
-										<div class="element-trainer">Тренер</div>
-										<div class="trainer-name">Едиль Аргымбаев</div>
-									</div>
-									<div class="info-item">
-										<div class="element-date">Срок</div>
-										<div class="date-name">На месяц</div>
-									</div>
-									<div class="text-right">
-										<span>до 23 августа</span>
-									</div>
-								</div>
+						<div class="table-body">
+							<div class="table-body-row">
+								<div>Художественная гимнастика</div>
+								<div>Детский центр Amanat kids</div>
+								<div>Алуа</div>
+								<div>10.01.2021</div>
+								<div>месяц</div>
+								<div>12 000 ₸</div>
 							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="add-element">
-								<a href="cabinet-subs-add.html" class="add-btn">
-									Добавить абонемент
-								</a>
+							<div class="table-body-row">
+								<div>Художественная гимнастика</div>
+								<div>Детский центр Amanat kids</div>
+								<div>Алуа</div>
+								<div>10.01.2021</div>
+								<div>месяц</div>
+								<div>12 000 ₸</div>
+							</div>
+							<div class="table-body-row">
+								<div>Художественная гимнастика</div>
+								<div>Детский центр Amanat kids</div>
+								<div>Алуа</div>
+								<div>10.01.2021</div>
+								<div>месяц</div>
+								<div>12 000 ₸</div>
 							</div>
 						</div>
 					</div>
