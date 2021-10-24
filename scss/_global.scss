@@ -272,6 +272,10 @@ form {
       border: none;
       max-width: 400px;
       height: 44px;
+      font-size: 14px;
+      &:focus {
+        box-shadow: 0 0 0 0.1rem rgba(73,80,87,0.15);
+      }
     }
     select {
       appearance: none;
