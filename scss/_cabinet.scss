@@ -254,7 +254,7 @@
       border: 1px dashed #5A6F8F;
       border-radius: 10px;
     }
-    .history-table {
+    .card-table {
       width: 100%;
       overflow-x: auto;
       .table-head {
@@ -284,26 +284,28 @@
           }
         }
       }
+      .table-head {
+        &>div:last-child {
+          text-align: right;
+        }
+      }
       .table-head, .table-body-row {
-        div:nth-child(1) {
+        &>div:nth-child(1) {
           width: 125px;
         }
-        div:nth-child(2) {
+        &>div:nth-child(2) {
           width: 160px;
         }
-        div:nth-child(3) {
+        &>div:nth-child(3) {
           width: 80px;
         }
-        div:nth-child(4) {
+        &>div:nth-child(4) {
           width: 100px;
         }
-        div:nth-child(5) {
+        &>div:nth-child(5) {
           width: 50px;
         }
-        div:nth-child(5) {
-          width: 50px;
-        }
-        div:nth-child(6) {
+        &>div:nth-child(6) {
           width: 70px;
         }
       }
@@ -375,11 +377,19 @@
             color: #8D9FBA;
           }
         }
-        img {
+        .eye-icon {
+          content: "";
+          width: 18px;
+          height: 18px;
+          display: block;
           position: absolute;
           top: 12px;
           right: 12px;
           cursor: pointer;
+          background-image: url(../img/cabinet/icons/eye.svg);
+          &.hide {
+            background-image: url(../img/cabinet/icons/eye-not.svg);
+          }
         }
       }
       .show-new-fields {
@@ -391,9 +401,13 @@
           margin-bottom: 10px;
         }
         span {
+          display: none;
           font-size: 12px;
           color: $orange;
           line-height: 1.3;
+          &.show {
+            display: block;
+          }
         }
       }
       .cabinet-btn {
@@ -405,9 +419,139 @@
     }
   }
 }
+#cabinet-subs {
+  .buy-btn {
+    margin-top: 3px;
+    a {
+      padding: 11px 25px;
+    }
+  }
+}
 #cabinet-child {
   .cabinet-card .card-element .element-info .info-item div:nth-child(2) {
     color: #5A6F8F;
+  }
+}
+#cabinet-subs-buy {
+  .cabinet-card {
+    background-color: transparent;
+    .card-table {
+      .table-body {
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        .del-cart-item {
+          cursor: pointer;
+        }
+      }
+      .table-head, .table-body-row {
+        align-items: baseline;
+        &>div:nth-child(1) {
+          width: 20px;
+        }
+        &>div:nth-child(2) {
+          width: 260px;
+        }
+        &>div:nth-child(3) {
+          width: 120px;
+        }
+        &>div:nth-child(4) {
+          width: 200px;
+        }
+        &>div:nth-child(5) {
+          width: 140px;
+        }
+        &>div:nth-child(6) {
+          width: 130px;
+        }
+        p {
+          margin-bottom: 5px;
+          &.item-caption {
+            display: none;
+            font-size: 10px;
+            line-height: 1.2;
+            color: $orange;
+            &.show {
+              display: block;
+            }
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        .form-control {
+          font-size: 14px;
+          border-radius: 15px;
+          border: none;
+          appearance: none;
+          background: #F9F9F9 url(../img/cabinet/icons/select-icon-orange.svg) right .75rem center/8px 12px no-repeat !important;
+          &:focus {
+            box-shadow: 0 0 0 0.1rem rgba(73,80,87,0.15);
+          }
+        }
+      }
+    }
+    .card-allPrice {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px 30px 80px;
+      margin-top: 24px;
+      .allPrice-title {
+        text-align: center;
+        font-size: 24px;
+        font-family: "Gotham Pro Bold", sans-serif;
+        margin-bottom: 40px;
+      }
+      .allPrice-body {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+      }
+      .body-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        &>div {
+          font-size: 16px;
+          &:last-child {
+            font-family: "Gotham Pro Medium", sans-serif;
+          }
+        }
+        .pack-price {
+          display: flex;
+          align-items: center;
+          .old-price {
+            font-size: 12px;
+            color: #8D9FBA;
+            text-decoration: line-through;
+            font-family: 'Gotham Pro', sans-serif;
+            margin-right: 10px;
+          }
+          .new-price {
+            color: $orange;
+          }
+        }
+      }
+      .allPrice-bottom {
+        .body-item {
+          margin-top: 30px;
+          div:last-child {
+            font-size: 24px;
+            font-family: "Gotham Pro Bold", sans-serif;
+          }
+        }
+      }
+    }
+    .final-buy-btn {
+      a {
+        display: block;
+        width: 100%;
+        margin-top: 24px;
+        font-size: 24px;
+        font-family: "Gotham Pro Medium", sans-serif;
+        padding: 18px 0;
+      }
+    }
   }
 }
 .datepicker td, .datepicker th {

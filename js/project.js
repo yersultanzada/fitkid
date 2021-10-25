@@ -87,21 +87,30 @@
     text : 'Изменить фото',
     input: false
   });
-
+  //показывает доп поля при нажатии на изменить пароль
   $('.change-password button').on('click', function () {
     $('.change-password button').css({
       'display': 'none'
     });
     $('.show-new-fields').addClass('show');
     $('.change-pass-form .cabinet-btn').addClass('show');
-  })
-
+  });
+  //возвращает все обратно при нажатии на отменить
   $('.change-pass-form .cancel-btn').on('click', function () {
     $('.show-new-fields').removeClass('show');
     $('.change-pass-form .cabinet-btn').removeClass('show');
     $('.change-password button').css({
       'display': 'block'
     });
-  })
+  });
+  //меняет иконку глаза при клике в поле пароля
+  $('.change-pass-form .eye-icon').on('click', function () {
+    $(this).toggleClass('hide');
+  });
+  //удаляет строку при клике на иконку удаления в корзине
+  $('#cabinet-subs-buy .del-cart-item').on('click', function () {
+    $(this).parent().parent().addClass('d-none');
+  });
+
 
 })(jQuery); // End of use strict
