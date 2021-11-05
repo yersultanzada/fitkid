@@ -145,16 +145,47 @@
             font-family: "Gotham Pro Medium", sans-serif;
           }
         }
-        .text-right {
-          a,span {
+        .cabinet-btn {
+          margin-top: 20px;
+          button {
+            background-color: transparent;
             font-size: 12px;
-            color: $orange;
             font-family: "Gotham Pro Medium", sans-serif;
+            padding: 8px 13px;
+            &.del-btn {
+              color: #5a6f8f;
+              border: 1px solid #5a6f8f;
+              margin-right: 3px;
+            }
+            &.card-buy-btn {
+              color: $orange;
+              border: 1px solid $orange;
+              &:hover {
+                background-color: $orange;
+                color: #fff;
+              }
+              &.active {
+                background-color: $orange;
+                color: #fff;
+              }
+            }
           }
         }
       }
       &.active {
         background-color: #FFF1DB;
+        .element-status {
+          background-color: $orange;
+        }
+        .date-name {
+          color: $orange;
+        }
+      }
+      &._disable {
+        background-color: #f9f9f9;
+        .element-status {
+          background-color: #DA9686;
+        }
       }
       .dropleft {
         position: absolute;
@@ -250,7 +281,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 221px;
+      height: 298px;
       border: 1px dashed #5A6F8F;
       border-radius: 10px;
     }
@@ -420,10 +451,58 @@
   }
 }
 #cabinet-subs {
+  .custom-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ececec;
+    ._title {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
   .buy-btn {
     margin-top: 3px;
-    a {
-      padding: 11px 25px;
+    button {
+      display: flex;
+      align-items: center;
+      padding: 8px 20px;
+      background-color: #ECECEC;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      cursor: pointer;
+      .icon-block {
+        position: relative;
+        .counter {
+          display: none;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          justify-content: center;
+          align-items: center;
+          font-size: 10px;
+          color: $orange;
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+          background-color: #fff;
+          border: 1px solid $orange;
+        }
+      }
+      &.active {
+        background-color: $orange;
+        color: #fff;
+        svg path {
+          fill: #fff;
+        }
+        .btn-text {
+          text-transform: uppercase;
+          font-family: "Gotham Pro Medium", sans-serif;
+          font-size: 16px;
+          margin-left: 20px;
+        }
+      }
     }
   }
 }

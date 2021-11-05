@@ -134,14 +134,24 @@
 			</div>
 			<div class="col-lg-10">
 				<div class="cabinet-card">
-					<div class="d-flex justify-content-between">
+					<div class="custom-block">
 						<div class="_title">Мои абонементы</div>
 						<div class="buy-btn">
-							<a href="cabinet-subs-buy.html" class="btn wt-btn-orange">Оплатить абонементы</a>
+							<!--После добавления абоненментов в корзину, клик по кнопке переводит на стр оплаты-->
+							<button>
+								<span class="icon-block">
+									<svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M22.325 16.5C23.45 16.5 24.44 15.885 24.95 14.955L30.32 5.22C30.875 4.23 30.155 3 29.015 3H6.815L5.405 0H0.5V3H3.5L8.9 14.385L6.875 18.045C5.78 20.055 7.22 22.5 9.5 22.5H27.5V19.5H9.5L11.15 16.5H22.325ZM8.24 6H26.465L22.325 13.5H11.795L8.24 6ZM9.5 24C7.85 24 6.515 25.35 6.515 27C6.515 28.65 7.85 30 9.5 30C11.15 30 12.5 28.65 12.5 27C12.5 25.35 11.15 24 9.5 24ZM24.5 24C22.85 24 21.515 25.35 21.515 27C21.515 28.65 22.85 30 24.5 30C26.15 30 27.5 28.65 27.5 27C27.5 25.35 26.15 24 24.5 24Z" fill="#8D9FBA"/>
+									</svg>
+									<span class="counter">1</span>
+								</span>
+								<span class="btn-text"></span>
+							</button>
 						</div>
 					</div>
 					<div class="desc-text">У вас пока нет активных абонементов! Добавьте абонемент, если вы уже посещаете наши секции.</div>
 					<div class="row">
+						<!--Абонемент по умолчанию когда добавляешь-->
 						<div class="col-lg-6">
 							<div class="card-element">
 								<div class="d-flex">
@@ -170,12 +180,14 @@
 										<div class="element-date">Срок</div>
 										<div class="date-name">Не выбрано</div>
 									</div>
-									<div class="text-right">
-										<a href="cabinet-subs-buy.html">Оплатить абонемент</a>
+									<div class="cabinet-btn text-right">
+										<button class="del-btn" type="button">Удалить</button>
+										<button class="card-buy-btn">Оплатить</button>
 									</div>
 								</div>
 							</div>
 						</div>
+						<!--Абонемент с активным статусом (оплачен), добавляется класс active-->
 						<div class="col-lg-6">
 							<div class="card-element active">
 								<div class="d-flex">
@@ -184,7 +196,7 @@
 									</div>
 									<div>
 										<div class="element-title">Художественная гимнастика</div>
-										<div class="element-status active">Активный</div>
+										<div class="element-status">Активный</div>
 									</div>
 								</div>
 								<div class="element-info">
@@ -202,10 +214,46 @@
 									</div>
 									<div class="info-item">
 										<div class="element-date">Срок</div>
-										<div class="date-name">На месяц</div>
+										<div class="date-name">до 23 августа</div>
 									</div>
-									<div class="text-right">
-										<span>до 23 августа</span>
+									<div class="cabinet-btn text-right">
+										<button class="del-btn" type="button">Удалить</button>
+										<button class="card-buy-btn">Оплатить</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--Абонемент с недоступной секцией, добавляется класс _disable-->
+						<div class="col-lg-6">
+							<div class="card-element _disable">
+								<div class="d-flex">
+									<div class="category-icon">
+										<img src="img/programs/icons/2.svg" alt="">
+									</div>
+									<div>
+										<div class="element-title">Художественная гимнастика</div>
+										<div class="element-status">Секция недоступна</div>
+									</div>
+								</div>
+								<div class="element-info">
+									<div class="info-item">
+										<div class="element-org">Детское учреждение</div>
+										<div class="org-name">Amanat kids</div>
+									</div>
+									<div class="info-item">
+										<div class="element-child">Ребенок</div>
+										<div class="child-name">Алуа</div>
+									</div>
+									<div class="info-item">
+										<div class="element-trainer">Тренер</div>
+										<div class="trainer-name">Едиль Аргымбаев</div>
+									</div>
+									<div class="info-item">
+										<div class="element-date">Срок</div>
+										<div class="date-name">Не выбрано</div>
+									</div>
+									<div class="cabinet-btn text-right">
+										<button class="del-btn" type="button">Удалить</button>
 									</div>
 								</div>
 							</div>

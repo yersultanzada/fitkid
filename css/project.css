@@ -94,7 +94,7 @@ a:hover {
 }
 
 .breadcrumb .breadcrumb-item.active span {
-  color: #FF9E00;
+  color: #ff9e00;
   font-size: 12px;
 }
 
@@ -148,7 +148,7 @@ h6 {
 }
 
 .title-btn {
-  color: #FF9E00;
+  color: #ff9e00;
   font-size: 24px;
   line-height: 23px;
   font-family: "Gotham Pro Medium", sans-serif;
@@ -194,7 +194,7 @@ h6 {
 }
 
 .team-block .block-exp {
-  color: #FF9E00;
+  color: #ff9e00;
   margin-top: 5px;
 }
 
@@ -282,7 +282,7 @@ h6 {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.06);
-  color: #FF9E00;
+  color: #ff9e00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,7 +323,7 @@ form .form-group label {
 }
 
 form .form-group label span {
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 form .form-group .form-control {
@@ -357,8 +357,8 @@ section {
 }
 
 .wt-btn-orange {
-  background-color: #FF9E00;
-  border-color: #FF9E00;
+  background-color: #ff9e00;
+  border-color: #ff9e00;
   color: white !important;
 }
 
@@ -672,7 +672,7 @@ img::-moz-selection {
 }
 
 .popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-label a {
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 .popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-label:before {
@@ -684,11 +684,11 @@ img::-moz-selection {
 }
 
 .popup-modal .modal-dialog .modal-content .modal-body form .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #FF9E00;
+  background-color: #ff9e00;
 }
 
 .popup-modal .modal-dialog .modal-content .modal-body .popup-btn {
-  background-color: #FF9E00;
+  background-color: #ff9e00;
   border: none;
   outline: none;
   cursor: pointer;
@@ -1121,7 +1121,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 #about-center .about-founder .founder-degree {
   font-size: 12px;
   font-family: "Gotham Pro Medium", sans-serif;
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 #about-stat .stat-desc {
@@ -1221,7 +1221,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 #about-faq .accordion .card .card-header .btn .header-arrow i {
-  color: #FF9E00;
+  color: #ff9e00;
   font-size: 16px;
 }
 
@@ -1310,7 +1310,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 #reviews .review-item .item-action span, #reviews-all .review-item .item-action span, #suggest-block .review-item .item-action span {
-  color: #FF9E00;
+  color: #ff9e00;
   font-family: "Gotham Pro Medium", sans-serif;
   margin-right: 7px;
 }
@@ -1377,7 +1377,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 #news .news-item .item-action span, #news-all .news-item .item-action span, #suggest-block .news-item .item-action span {
-  color: #FF9E00;
+  color: #ff9e00;
   font-family: "Gotham Pro Medium", sans-serif;
   margin-right: 7px;
 }
@@ -1429,9 +1429,9 @@ section#masthead #main-carousel .owl-nav .owl-next {
 
 #trainers-all .team-block .block-btn a {
   font-size: 12px;
-  color: #FF9E00;
+  color: #ff9e00;
   background-color: transparent;
-  border-color: #FF9E00;
+  border-color: #ff9e00;
   padding: 7px 12px;
 }
 
@@ -1658,11 +1658,11 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 .cabinet-leftMenu .menu-item li.active a {
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 .cabinet-leftMenu .menu-item li.active a svg path {
-  fill: #FF9E00;
+  fill: #ff9e00;
 }
 
 .cabinet .cabinet-card {
@@ -1674,7 +1674,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 
 .cabinet .cabinet-card .card-back-btn {
   display: inline-block;
-  color: #FF9E00;
+  color: #ff9e00;
   margin-bottom: 5px;
 }
 
@@ -1724,7 +1724,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 .cabinet .cabinet-card .card-element .element-status.active {
-  background-color: #FF9E00;
+  background-color: #ff9e00;
 }
 
 .cabinet .cabinet-card .card-element .category-icon {
@@ -1752,14 +1752,56 @@ section#masthead #main-carousel .owl-nav .owl-next {
   font-family: "Gotham Pro Medium", sans-serif;
 }
 
-.cabinet .cabinet-card .card-element .element-info .text-right a, .cabinet .cabinet-card .card-element .element-info .text-right span {
+.cabinet .cabinet-card .card-element .element-info .cabinet-btn {
+  margin-top: 20px;
+}
+
+.cabinet .cabinet-card .card-element .element-info .cabinet-btn button {
+  background-color: transparent;
   font-size: 12px;
-  color: #FF9E00;
   font-family: "Gotham Pro Medium", sans-serif;
+  padding: 8px 13px;
+}
+
+.cabinet .cabinet-card .card-element .element-info .cabinet-btn button.del-btn {
+  color: #5a6f8f;
+  border: 1px solid #5a6f8f;
+  margin-right: 3px;
+}
+
+.cabinet .cabinet-card .card-element .element-info .cabinet-btn button.card-buy-btn {
+  color: #ff9e00;
+  border: 1px solid #ff9e00;
+}
+
+.cabinet .cabinet-card .card-element .element-info .cabinet-btn button.card-buy-btn:hover {
+  background-color: #ff9e00;
+  color: #fff;
+}
+
+.cabinet .cabinet-card .card-element .element-info .cabinet-btn button.card-buy-btn.active {
+  background-color: #ff9e00;
+  color: #fff;
 }
 
 .cabinet .cabinet-card .card-element.active {
   background-color: #FFF1DB;
+}
+
+.cabinet .cabinet-card .card-element.active .element-status {
+  background-color: #ff9e00;
+}
+
+.cabinet .cabinet-card .card-element.active .date-name {
+  color: #ff9e00;
+}
+
+.cabinet .cabinet-card .card-element._disable {
+  background-color: #f9f9f9;
+}
+
+.cabinet .cabinet-card .card-element._disable .element-status {
+  background-color: #DA9686;
 }
 
 .cabinet .cabinet-card .card-element .dropleft {
@@ -1856,8 +1898,8 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 .cabinet .cabinet-card .cabinet-btn button.save-btn {
-  background-color: #FF9E00;
-  border: 1px solid #FF9E00;
+  background-color: #ff9e00;
+  border: 1px solid #ff9e00;
   color: #fff;
 }
 
@@ -1865,11 +1907,11 @@ section#masthead #main-carousel .owl-nav .owl-next {
   background-color: transparent;
   margin-left: 30px;
   border: 1px solid transparent;
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 .cabinet .cabinet-card .cabinet-btn button.cancel-btn:hover {
-  border-color: #FF9E00;
+  border-color: #ff9e00;
 }
 
 .cabinet .cabinet-card .add-element {
@@ -1882,7 +1924,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 221px;
+  height: 298px;
   border: 1px dashed #5A6F8F;
   border-radius: 10px;
 }
@@ -1984,7 +2026,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 
 .cabinet .cabinet-card .change-photo form .btn {
   background-color: transparent;
-  color: #FF9E00;
+  color: #ff9e00;
   font-size: 16px;
   font-family: "Gotham Pro Medium", sans-serif;
   border: none;
@@ -2027,7 +2069,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
   background-color: transparent;
   border: none;
   outline: none;
-  color: #FF9E00;
+  color: #ff9e00;
   font-family: "Gotham Pro Medium", sans-serif;
   font-size: 16px;
   margin-left: 15px;
@@ -2089,7 +2131,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 .cabinet .cabinet-card .change-pass-form .show-new-fields span {
   display: none;
   font-size: 12px;
-  color: #FF9E00;
+  color: #ff9e00;
   line-height: 1.3;
 }
 
@@ -2105,12 +2147,79 @@ section#masthead #main-carousel .owl-nav .owl-next {
   display: block;
 }
 
+#cabinet-subs .custom-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+#cabinet-subs .custom-block ._title {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
 #cabinet-subs .buy-btn {
   margin-top: 3px;
 }
 
-#cabinet-subs .buy-btn a {
-  padding: 11px 25px;
+#cabinet-subs .buy-btn button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #ECECEC;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cabinet-subs .buy-btn button .icon-block {
+  position: relative;
+}
+
+#cabinet-subs .buy-btn button .icon-block .counter {
+  display: none;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px;
+  color: #ff9e00;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #ff9e00;
+}
+
+#cabinet-subs .buy-btn button.active {
+  background-color: #ff9e00;
+  color: #fff;
+}
+
+#cabinet-subs .buy-btn button.active svg path {
+  fill: #fff;
+}
+
+#cabinet-subs .buy-btn button.active .btn-text {
+  text-transform: uppercase;
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
 }
 
 #cabinet-child .cabinet-card .card-element .element-info .info-item div:nth-child(2) {
@@ -2169,7 +2278,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
   display: none;
   font-size: 10px;
   line-height: 1.2;
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 #cabinet-subs-buy .cabinet-card .card-table .table-head p.item-caption.show, #cabinet-subs-buy .cabinet-card .card-table .table-body-row p.item-caption.show {
@@ -2253,7 +2362,7 @@ section#masthead #main-carousel .owl-nav .owl-next {
 }
 
 #cabinet-subs-buy .cabinet-card .card-allPrice .body-item .pack-price .new-price {
-  color: #FF9E00;
+  color: #ff9e00;
 }
 
 #cabinet-subs-buy .cabinet-card .card-allPrice .allPrice-bottom .body-item {

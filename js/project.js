@@ -111,6 +111,15 @@
   $('#cabinet-subs-buy .del-cart-item').on('click', function () {
     $(this).parent().parent().addClass('d-none');
   });
+  $('.element-info .cabinet-btn .card-buy-btn').on('click', function () {
+    $(this).text('В корзине');
+    $(this).addClass('active');
+    $('.custom-block .buy-btn button').addClass('active');
+    $('.custom-block .buy-btn button .counter').css({
+      'display':'flex'
+    });
+    $('.custom-block .buy-btn button .btn-text').text('Оплатить');
+  })
 
 
 })(jQuery); // End of use strict
