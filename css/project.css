@@ -356,6 +356,11 @@ section {
   border-radius: 6px;
 }
 
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 .wt-btn-orange {
   background-color: #ff9e00;
   border-color: #ff9e00;
@@ -689,7 +694,7 @@ img::-moz-selection {
 
 .popup-modal .modal-dialog .modal-content .modal-body .popup-btn {
   background-color: #ff9e00;
-  border: none;
+  border: 1px solid #ff9e00;
   outline: none;
   cursor: pointer;
   width: 100%;
@@ -701,13 +706,46 @@ img::-moz-selection {
   line-height: inherit;
 }
 
-.popup-modal.added-type .modal-dialog .modal-content .modal-body .popup-img {
-  margin-bottom: 40px;
-  margin-top: 30px;
+.popup-modal .modal-dialog .modal-content .modal-body .popup-btn.popup-btn-transparent {
+  background-color: transparent;
+  color: #ff9e00;
+}
+
+.popup-modal.added-type .modal-dialog .modal-content .modal-body {
+  text-align: center;
+}
+
+.popup-modal.added-type .modal-dialog .modal-content .modal-body .body-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  background-color: #ff9e00;
+  margin: 30px auto 40px;
 }
 
 .popup-modal.added-type .modal-dialog .modal-content .modal-body .popup-main_text {
   margin-bottom: 50px;
+}
+
+.popup-modal.added-type .modal-dialog .modal-content .modal-body .popup-btn {
+  width: 215px;
+}
+
+.popup-modal#delSubsModal .popup-btn {
+  width: 100%;
+}
+
+.popup-modal#delSubsModal .popup-btn:first-child {
+  margin-right: 10px;
 }
 
 section#masthead #main-carousel .main-carousel-pt {

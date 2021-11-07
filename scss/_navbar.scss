@@ -205,7 +205,7 @@
         }
         .popup-btn {
           background-color: $orange;
-          border: none;
+          border: 1px solid $orange;
           outline: none;
           cursor: pointer;
           width: 100%;
@@ -215,18 +215,40 @@
           font-size: 17px;
           font-family: "Gotham Pro Medium", sans-serif;
           line-height: inherit;
+          &.popup-btn-transparent {
+            background-color: transparent;
+            color: $orange;
+          }
         }
       }
     }
   }
   &.added-type {
     .modal-dialog .modal-content .modal-body {
-      .popup-img {
-        margin-bottom: 40px;
-        margin-top: 30px;
+      text-align: center;
+      .body-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 66px;
+        height: 66px;
+        border-radius: 100%;
+        background-color: $orange;
+        margin: 30px auto 40px;
       }
       .popup-main_text {
         margin-bottom: 50px;
+      }
+      .popup-btn {
+        width: 215px;
+      }
+    }
+  }
+  &#delSubsModal {
+    .popup-btn {
+      width: 100%;
+      &:first-child {
+        margin-right: 10px;
       }
     }
   }

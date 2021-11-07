@@ -107,10 +107,11 @@
   $('.change-pass-form .eye-icon').on('click', function () {
     $(this).toggleClass('hide');
   });
-  //удаляет строку при клике на иконку удаления в корзине
+  //удаляет строку(ненужный абонемент) при клике на иконку удаления в корзине
   $('#cabinet-subs-buy .del-cart-item').on('click', function () {
     $(this).parent().parent().addClass('d-none');
   });
+  //операции с кнопкой корзины на стр абонемента
   $('.element-info .cabinet-btn .card-buy-btn').on('click', function () {
     $(this).text('В корзине');
     $(this).addClass('active');
@@ -119,7 +120,12 @@
       'display':'flex'
     });
     $('.custom-block .buy-btn button .btn-text').text('Оплатить');
+  });
+  //скрывает пред. модалку когда нажимаешь "да" при удалении абонемента
+  $('#subsDeletedModal').on('shown.bs.modal', function (event) {
+    $('#delSubsModal').modal('hide');
   })
+
 
 
 })(jQuery); // End of use strict
