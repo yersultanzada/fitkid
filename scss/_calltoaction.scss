@@ -30,18 +30,24 @@
       }
     }
   }
-  .cta-ball {
-    position: absolute;
-    top: -30px;
-    right: 77px;
-    filter: drop-shadow(-10px 8px 19px rgba(19, 41, 75, 0.25));
+  #cta-ball {
+    position: static !important;
+    .cta-ball {
+      position: absolute !important;
+      top: -30px !important;
+      right: 77px !important;
+      left: auto !important;
+      filter: drop-shadow(-10px 8px 19px rgba(19, 41, 75, 0.25));
+    }
   }
   .cta-horse {
-    position: absolute;
-    bottom: -65px;
-    right: 120px;
-    filter: drop-shadow(0px 11px 19px rgba(19, 41, 75, 0.25));
-    transform: rotate(-21.5deg);
+    position: absolute !important;
+    top: auto !important;
+    bottom: -65px !important;
+    right: 120px !important;
+    left: auto !important;
+    filter: drop-shadow(0px 11px 19px rgba(19, 41, 75, 0.25)) !important;
+    transform: rotate(-21.5deg) !important;
   }
 }
 #callToAction {

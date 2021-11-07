@@ -1,6 +1,9 @@
 // Styling for the navbar
 #mainNav {
+  position: sticky;
+  top: 0;
   background-color: #fff;
+  z-index: 10;
   .burger_menu {
     float: right;
     padding-top: 10px;
@@ -12,9 +15,10 @@
         font-size: 100%;
         padding: 0.75em 0;
         color: $dark-blue;
+        font-family: "Gotham Pro Medium", sans-serif;
         &.active,
         &:hover {
-          color: lighten($dark-blue, 10%);
+          color: $orange;
         }
       }
     }
@@ -25,6 +29,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    font-family: "Gotham Pro Medium", sans-serif;
     li {
       a {
         display: block;
@@ -38,25 +43,48 @@
         padding: 12px 0;
         cursor: pointer;
       }
-      &:first-child a:before {
-        content: "";
-        display: inline-block;
-        width: 18px;
-        height: 19px;
-        background: url("../img/main/phone.svg");
-        margin-right: 5px;
-        vertical-align: text-bottom;
+      &:first-child {
+        a:before {
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 19px;
+          mask-image: url("../img/main/phone.svg");
+          background-color: $dark-blue;
+          margin-right: 5px;
+          vertical-align: text-bottom;
+        }
+        &:hover {
+          a {
+            color: $orange;
+            &:before {
+              background-color: $orange;
+            }
+          }
+        }
       }
-      &:nth-child(2) button:before {
-        content: "";
-        display: inline-block;
-        width: 14px;
-        height: 14px;
-        background: url("../img/main/user.svg");
-        margin-right: 7px;
+      &:nth-child(2) button {
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          mask-image: url("../img/main/user.svg");
+          background-color: $dark-blue;
+          margin-right: 7px;
+        }
+        &:hover {
+          color: $orange;
+          &:before {
+            background-color: $orange;
+          }
+        }
       }
       &:last-child a {
         color: #FF9E00;
+        &:hover {
+          color: $dark-blue;
+        }
       }
     }
   }

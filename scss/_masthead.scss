@@ -1,55 +1,16 @@
 // Styling for the masthead
 section#masthead {
   #main-carousel {
-    .main-carousel-pt {
-      position: relative;
-      padding-top: 60px;
-    }
     .item {
-      padding: 60px;
-      color: #fff;
-      border-radius: 10px;
-      &.item_long {
-        background: #FFC15D;
-        .item-img {
-          position: absolute;
-          bottom: 0;
-          right: -35px;
-          img {
-            filter: drop-shadow(-19px 0px 33px rgba(19, 41, 75, 0.1));
-          }
-        }
+      img {
+        width: 100%;
+        border-radius: 10px;
       }
-      &.item_short {
-        background: #13294B;
-        .carousel-title {
-          margin-bottom: 96px;
-        }
-      }
-      .btn {
-        font-size: 14px;
-        font-family: "Gotham Pro Medium", sans-serif;
-        padding: 10px 15px;
-      }
-    }
-    .carousel-title {
-      font-size: 40px;
-      font-family: 'Gotham Pro Medium', sans-serif;
-      line-height: 1.1;
-      margin-bottom: 28px;
-    }
-    .carousel-desc {
-      font-size: 24px;
-      font-family: 'Gotham Pro Medium', sans-serif;
-      line-height: 1.2;
-      margin-bottom: 55px;
     }
     .owl-nav {
       .owl-prev, .owl-next {
-        top: 55%;
-      }
-      .owl-next {
-        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }

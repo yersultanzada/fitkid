@@ -33,25 +33,27 @@
     target: '#mainNav',
     offset: 56
   });
-  $('#main-carousel, #review-carousel, #news-carousel').owlCarousel({
+  $('#main-carousel').owlCarousel({
+    items: 1.4,
+    loop:true,
+    margin:10,
+    nav:true,
+    navText: [
+        "<i class=\"fas fa-chevron-left\"></i>",
+        "<i class=\"fas fa-chevron-right\"></i>"
+    ],
+    dots:false
+  });
+  $('#review-carousel, #news-carousel').owlCarousel({
     items: 3,
     loop:true,
     margin:10,
-    merge:true,
     nav:true,
     navText: [
       "<i class=\"fas fa-chevron-left\"></i>",
       "<i class=\"fas fa-chevron-right\"></i>"
     ],
-    dots:false,
-    responsive:{
-      678:{
-        mergeFit:true
-      },
-      1000:{
-        mergeFit:false
-      }
-    }
+    dots:false
   });
   $('#team-carousel').owlCarousel({
     items: 5,
@@ -125,7 +127,5 @@
   $('#subsDeletedModal').on('shown.bs.modal', function (event) {
     $('#delSubsModal').modal('hide');
   })
-
-
 
 })(jQuery); // End of use strict
