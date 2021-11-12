@@ -38,9 +38,16 @@
 			</ul>
 		</div>
 		<div class="col-lg-4 text-center">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">
-				<img src="img/main/logo.svg" alt="">
-			</a>
+			<picture>
+				<source srcset="img/main/logo-mini.svg" media="(max-width: 991px)">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top">
+					<img src="img/main/logo-mini.svg" alt="">
+				</a>
+				<source srcset="img/main/logo.svg" media="(min-width: 992px)">
+				<a class="navbar-brand js-scroll-trigger" href="#page-top">
+					<img src="img/main/logo.svg" alt="">
+				</a>
+			</picture>
 			<a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
 				<i class="fas fa-bars"></i>
 			</a>
