@@ -4,6 +4,8 @@
   top: 0;
   background-color: #fff;
   z-index: 10;
+  padding-top: 15px;
+  padding-bottom: 15px;
   .burger_menu {
     float: right;
     padding-top: 10px;
@@ -91,8 +93,6 @@
 }
 @media(min-width:992px) {
   #mainNav {
-    padding-top: 15px;
-    padding-bottom: 15px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -145,6 +145,23 @@
         background-color: #fff;
         left: 50%;
         transform: translate(-50%, 0);
+        .nav-item:first-child a:before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: url(../img/main/user.svg);
+          margin-right: 7px;
+        }
+        .nav-item:last-child a:before {
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 19px;
+          background: url(../img/main/phone.svg);
+          margin-right: 5px;
+          vertical-align: text-bottom;
+        }
       }
     }
   }
@@ -201,6 +218,16 @@
           font-family: "Gotham Pro Medium", sans-serif;
           text-align: center;
           padding-top: 10px;
+        }
+        .registration-block {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 30px;
+          a {
+            font-family: "Gotham Pro Medium", sans-serif;
+            font-size: 16px;
+            color: $orange;
+          }
         }
         form {
           margin-top: 18px;

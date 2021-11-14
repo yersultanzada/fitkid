@@ -80,11 +80,6 @@
       }
     }
   });
-
-  $('#add-photo').filestyle({
-    text : 'Добавить фото',
-    input: false
-  });
   $('#change-photo').filestyle({
     text : 'Изменить фото',
     input: false
@@ -95,15 +90,6 @@
       'display': 'none'
     });
     $('.show-new-fields').addClass('show');
-    $('.change-pass-form .cabinet-btn').addClass('show');
-  });
-  //возвращает все обратно при нажатии на отменить
-  $('.change-pass-form .cancel-btn').on('click', function () {
-    $('.show-new-fields').removeClass('show');
-    $('.change-pass-form .cabinet-btn').removeClass('show');
-    $('.change-password button').css({
-      'display': 'block'
-    });
   });
   //меняет иконку глаза при клике в поле пароля
   $('.change-pass-form .eye-icon').on('click', function () {

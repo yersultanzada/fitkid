@@ -21,7 +21,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg" id="mainNav">
 	<div class="container p-0">
-		<div class="col-lg-4 collapse navbar-collapse">
+		<div class="col-lg-4 d-none d-lg-block">
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link js-scroll-trigger" href="about.html">О нас</a>
@@ -37,22 +37,16 @@
 				</li>
 			</ul>
 		</div>
-		<div class="col-lg-4 text-center">
-			<picture>
-				<source srcset="img/main/logo-mini.svg" media="(max-width: 991px)">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">
-					<img src="img/main/logo-mini.svg" alt="">
-				</a>
-				<source srcset="img/main/logo.svg" media="(min-width: 992px)">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">
-					<img src="img/main/logo.svg" alt="">
-				</a>
-			</picture>
+		<div class="col-lg-4 text-lg-center">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">
+				<img src="img/main/logo.svg" class="d-none d-lg-block" alt="">
+				<img src="img/main/logo-mini.svg" class="d-lg-none" alt="">
+			</a>
 			<a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
 				<i class="fas fa-bars"></i>
 			</a>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 d-none d-lg-block">
 			<ul class="right-items">
 				<li>
 					<a href="tel:+77001223344">+7 (700) 122 3344</a>
@@ -61,7 +55,7 @@
 					<button type="button" data-toggle="modal" data-target="#registrationModal">Войти</button>
 				</li>
 				<li>
-					<a href="cabinet.html">Акции</a>
+					<a href="cabinet-reg.html">Акции</a>
 				</li>
 			</ul>
 		</div>
@@ -133,6 +127,7 @@
 	<img src="img/main/cloud-left.png" class="cloud-left" alt="">
 	<img src="img/main/girl-left.png" class="girl-left" alt="">
 	<img src="img/main/boy-right.png" class="boy-right" alt="">
+	<img src="img/main/msg-right.png" class="msg-right" alt="">
 	<div class="_circle-blur"></div>
 	<div class="_circle-blur _right"></div>
 </section>
@@ -632,24 +627,25 @@
 				<div class="popup-main_text">
 					Войдите или создайте аккаунт FITKID!
 				</div>
-				<div class="popup-secondary_text">
-					Ваш номер телефона
-				</div>
 				<form>
 					<fieldset>
 						<div class="form-group">
-							<input type="tel" class="form-control tel" placeholder="+7 000 123 45 67">
+							<label for="pinputLogin">Логин</label>
+							<input type="text" class="form-control" id="pinputLogin">
+						</div>
+						<div class="form-group">
+							<label for="pinputPass">Пароль</label>
+							<input type="text" class="form-control" id="pinputPass">
 						</div>
 						<button class="btn popup-btn">
-							Подтвердить
+							Войти
 						</button>
-						<div class="custom-control custom-checkbox">
-							<input type="checkbox" class="custom-control-input" id="popupCheck" checked>
-							<label class="custom-control-label" for="popupCheck">Я согласен с <a href="#" target="_blank">договором для пользователя</a></label>
-						</div>
-						<!--Если человек убирает чек, добавить в <fieldset disabled>-->
 					</fieldset>
 				</form>
+				<div class="registration-block">
+					<a href="cabinet-reg.html">Регистрация</a>
+					<a href="cabinet-change-pass.html">Забыли пароль?</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -659,35 +655,40 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<div class="close-modal" data-dismiss="modal">
-				<a href="#">
-					<i class="fas fa-times"></i>
-				</a>
+				<img src="img/main/close.svg" alt="">
 			</div>
 			<div class="modal-body">
 				<div class="col-12 text-left">
-					<a class="menu_logo">Quantum Company</a>
+					<img src="img/main/logo-mini.svg" alt="">
 				</div>
 				<div class="col-12 mt-4">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#about">About us</a>
+							<a class="nav-link" href="#">О нас</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#services">Services</a>
+							<a class="nav-link" href="#">Партнерам</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
+							<a class="nav-link" href="#">Тренеры</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#team">Testimonials</a>
+							<a class="nav-link" href="#team">Программы</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
+							<a class="nav-link" href="#">Акции</a>
 						</li>
 					</ul>
 				</div>
 				<div class="request_btn">
-					<a class="btn wt-btn-primary wt-btn-size-sm wt-btn-rounded" href="#">Request a quote</a>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Войти</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="tel:+77001223344">+7 (700) 122 3344</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

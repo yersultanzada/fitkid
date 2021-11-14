@@ -82,9 +82,7 @@
         <div class="row">
             <div class="col-lg-2 cabinet-leftMenu">
                 <div class="menu-photo">
-                    <form>
-                        <input type="file" id="add-photo" class="filestyle">
-                    </form>
+                    <img src="img/cabinet/user-default.png" alt="">
                 </div>
                 <div class="menu-mail">bbb@gmail.com</div>
                 <ul class="menu-item">
@@ -129,6 +127,9 @@
                 <div class="cabinet-card">
                     <div class="_title">Привет, дорогой родитель!</div>
                     <div class="desc-text">Рады видеть вас! Заполните свои личные данные для лучшего взаимодействия с сайтом FITKID.</div>
+                    <div class="notice-text">
+                        На указанный в форме e-mail придет запрос на подтверждение регистрации.
+                    </div>
                     <form>
                         <div class="form-group">
                             <label for="inputName">Ваше имя <span>*</span></label>
@@ -139,36 +140,28 @@
                             <input type="text" class="form-control" id="inputLastName">
                         </div>
                         <div class="form-group">
+                            <label for="inputLogin">Логин (мин. 3 символа) <span>*</span></label>
+                            <input type="text" class="form-control" id="inputLogin">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPass">Пароль <span>*</span></label>
+                            <input type="text" class="form-control" id="inputPass">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPass2">Подтверждение пароля <span>*</span></label>
+                            <input type="text" class="form-control" id="inputPass2">
+                        </div>
+                        <div class="form-group">
                             <label for="inputEmail">Email <span>*</span></label>
                             <input type="email" class="form-control" id="inputEmail">
                         </div>
-                        <div class="form-group">
-                            <label for="inputTel">Контактный телефон</label>
-                            <input type="tel" class="form-control" id="inputTel" value="+7 778 777 7777" readonly>
-                        </div>
-                        <div class="child-group">
-                            <div class="form-group">
-                                <label for="inputChildName">Имя ребенка <span>*</span></label>
-                                <input type="text" class="form-control" id="inputChildName">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputLastChildName">Фамилия ребенка <span>*</span></label>
-                                <input type="text" class="form-control" id="inputLastChildName">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputDateChild">Дата рождения ребенка <span>*</span></label>
-                                <input type="text" class="form-control" id="inputDateChild">
-                            </div>
-                        </div>
-						<!--При нажатии на .add-btn можно продублировать выше элемент .child-group-->
-                        <a class="add-btn">
-                            Добавить еще ребенка
-                        </a>
                         <div class="cabinet-btn">
-                            <button class="save-btn" type="button">Сохранить</button>
-                            <button class="cancel-btn" type="button">Отменить</button>
+                            <button class="save-btn" type="button">Зарегистрироваться</button>
                         </div>
                     </form>
+                    <div class="auth-block">
+                        <a href="#registrationModal" data-toggle="modal">Авторизация</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -265,7 +258,47 @@
         </div>
     </div>
 </section>
-
+<!-- registration-->
+<div id="registrationModal" class="popup-modal modal fade" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.88393 8.001L15.8169 1.06795C16.061 0.823858 16.061 0.428108 15.8169 0.184046C15.5729 -0.0600155 15.1771 -0.0600467 14.933 0.184046L7.99999 7.11709L1.06697 0.184046C0.822881 -0.0600467 0.427132 -0.0600467 0.18307 0.184046C-0.0609921 0.42814 -0.0610233 0.823889 0.18307 1.06795L7.11609 8.00097L0.18307 14.934C-0.0610233 15.1781 -0.0610233 15.5739 0.18307 15.8179C0.305101 15.9399 0.465069 16.0009 0.625038 16.0009C0.785006 16.0009 0.944944 15.9399 1.06701 15.8179L7.99999 8.8849L14.933 15.8179C15.055 15.9399 15.215 16.0009 15.375 16.0009C15.5349 16.0009 15.6949 15.9399 15.8169 15.8179C16.061 15.5738 16.061 15.1781 15.8169 14.934L8.88393 8.001Z" fill="#13294B"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img src="img/main/popup-logo.svg" class="popup-img" alt="">
+                </div>
+                <div class="popup-main_text">
+                    Войдите или создайте аккаунт FITKID!
+                </div>
+                <form>
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="pinputLogin">Логин</label>
+                            <input type="text" class="form-control" id="pinputLogin">
+                        </div>
+                        <div class="form-group">
+                            <label for="pinputPass">Пароль</label>
+                            <input type="text" class="form-control" id="pinputPass">
+                        </div>
+                        <button class="btn popup-btn">
+                            Войти
+                        </button>
+                    </fieldset>
+                </form>
+                <div class="registration-block">
+                    <a href="cabinet-reg.html">Регистрация</a>
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- menuModal-->
 <div class="menu-modal modal fade" id="menuModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">

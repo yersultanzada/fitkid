@@ -420,7 +420,7 @@ img::-moz-selection {
 
 @media (max-width: 767px) {
   section {
-    padding: 40px 0;
+    padding: 35px 0;
   }
 }
 
@@ -428,8 +428,11 @@ img::-moz-selection {
   .container {
     max-width: 740px;
   }
-  section {
-    padding: 60px 0;
+}
+
+@media (max-width: 991px) {
+  ._title {
+    font-size: 26px;
   }
 }
 
@@ -445,6 +448,8 @@ img::-moz-selection {
   top: 0;
   background-color: #fff;
   z-index: 10;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #mainNav .burger_menu {
@@ -540,8 +545,6 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 15px;
-    padding-bottom: 15px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
@@ -605,6 +608,25 @@ img::-moz-selection {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+}
+
+.menu-modal#menuModal .modal-content .modal-body .request_btn .nav-item:first-child a:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../img/main/user.svg);
+  margin-right: 7px;
+}
+
+.menu-modal#menuModal .modal-content .modal-body .request_btn .nav-item:last-child a:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 19px;
+  background: url(../img/main/phone.svg);
+  margin-right: 5px;
+  vertical-align: text-bottom;
 }
 
 .menu-modal#menuModal .close-modal {
@@ -672,6 +694,22 @@ img::-moz-selection {
   font-family: "Gotham Pro Medium", sans-serif;
   text-align: center;
   padding-top: 10px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body .registration-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.popup-modal .modal-dialog .modal-content .modal-body .registration-block a {
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 16px;
+  color: #ff9e00;
 }
 
 .popup-modal .modal-dialog .modal-content .modal-body form {
@@ -1109,6 +1147,12 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   position: absolute;
   top: 340px;
   left: 0;
+}
+
+#main-about .msg-right {
+  position: absolute;
+  bottom: 300px;
+  right: 0;
 }
 
 #about-center ._title {
@@ -1608,6 +1652,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 .cabinet-leftMenu .menu-photo img {
   width: 100%;
+  height: 100%;
   border-radius: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2036,6 +2081,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 .cabinet .cabinet-card .change-photo img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 100%;
@@ -2044,11 +2090,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
 }
 
-.cabinet .cabinet-card .change-photo form {
-  margin-top: 20px;
-}
-
-.cabinet .cabinet-card .change-photo form .btn {
+.cabinet .cabinet-card .change-photo .btn {
   background-color: transparent;
   color: #ff9e00;
   font-size: 16px;
@@ -2061,13 +2103,14 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   font-size: 18px;
   font-family: "Gotham Pro Bold", sans-serif;
   margin-top: 70px;
+  margin-bottom: 35px;
 }
 
 .cabinet .cabinet-card .settings-form .form-control {
   max-width: 100%;
 }
 
-.cabinet .cabinet-card .settings-form input[type=text], .cabinet .cabinet-card .settings-form input[type=email] {
+.cabinet .cabinet-card .settings-form input[type=text], .cabinet .cabinet-card .settings-form input[type=tel] {
   background: #f8f8f8 url(../img/cabinet/icons/pencil.svg) right 0.75rem center/18px 18px no-repeat !important;
 }
 
@@ -2087,6 +2130,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 .cabinet .cabinet-card .change-password .settings-subtitle {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .cabinet .cabinet-card .change-password button {
@@ -2100,31 +2144,35 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   cursor: pointer;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group {
+.cabinet .cabinet-card .change-pass-block {
+  margin-top: 35px;
+}
+
+.cabinet .cabinet-card .change-pass-block .form-group {
   position: relative;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group input {
+.cabinet .cabinet-card .change-pass-block .form-group input {
   background-image: none !important;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group input::-webkit-input-placeholder {
+.cabinet .cabinet-card .change-pass-block .form-group input::-webkit-input-placeholder {
   color: #8D9FBA;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group input:-ms-input-placeholder {
+.cabinet .cabinet-card .change-pass-block .form-group input:-ms-input-placeholder {
   color: #8D9FBA;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group input::-ms-input-placeholder {
+.cabinet .cabinet-card .change-pass-block .form-group input::-ms-input-placeholder {
   color: #8D9FBA;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group input::placeholder {
+.cabinet .cabinet-card .change-pass-block .form-group input::placeholder {
   color: #8D9FBA;
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group .eye-icon {
+.cabinet .cabinet-card .change-pass-block .form-group .eye-icon {
   content: "";
   width: 18px;
   height: 18px;
@@ -2136,39 +2184,53 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   background-image: url(../img/cabinet/icons/eye.svg);
 }
 
-.cabinet .cabinet-card .change-pass-form .form-group .eye-icon.hide {
+.cabinet .cabinet-card .change-pass-block .form-group .eye-icon.hide {
   background-image: url(../img/cabinet/icons/eye-not.svg);
 }
 
-.cabinet .cabinet-card .change-pass-form .show-new-fields {
+.cabinet .cabinet-card .change-pass-block .show-new-fields {
   display: none;
 }
 
-.cabinet .cabinet-card .change-pass-form .show-new-fields.show {
+.cabinet .cabinet-card .change-pass-block .show-new-fields.show {
   display: block;
 }
 
-.cabinet .cabinet-card .change-pass-form .show-new-fields .form-group:last-child {
+.cabinet .cabinet-card .change-pass-block .show-new-fields .form-group:last-child {
   margin-bottom: 10px;
 }
 
-.cabinet .cabinet-card .change-pass-form .show-new-fields span {
+.cabinet .cabinet-card .change-pass-block .show-new-fields span {
   display: none;
   font-size: 12px;
   color: #ff9e00;
   line-height: 1.3;
 }
 
-.cabinet .cabinet-card .change-pass-form .show-new-fields span.show {
+.cabinet .cabinet-card .change-pass-block .show-new-fields span.show {
   display: block;
 }
 
-.cabinet .cabinet-card .change-pass-form .cabinet-btn {
+.cabinet .cabinet-card .change-pass-block .cabinet-btn {
   display: none;
 }
 
-.cabinet .cabinet-card .change-pass-form .cabinet-btn.show {
+.cabinet .cabinet-card .change-pass-block .cabinet-btn.show {
   display: block;
+}
+
+#cabinet-info .cabinet-card .notice-text {
+  color: #ff9e00;
+}
+
+#cabinet-info .cabinet-card .auth-block {
+  margin-top: 20px;
+}
+
+#cabinet-info .cabinet-card .auth-block a {
+  font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 16px;
+  color: #ff9e00;
 }
 
 #cabinet-subs .custom-block {
@@ -2248,6 +2310,10 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 #cabinet-child .cabinet-card .card-element .element-info .info-item div:nth-child(2) {
   color: #5A6F8F;
+}
+
+#cabinet-child .cabinet-card .add-element {
+  height: 220px;
 }
 
 #cabinet-subs-buy .cabinet-card {

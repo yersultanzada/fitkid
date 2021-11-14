@@ -10,6 +10,7 @@
     margin: auto;
     img {
       width: 100%;
+      height: 100%;
       border-radius: 100%;
       object-fit: cover;
       filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
@@ -348,33 +349,32 @@
       margin: auto;
       img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 100%;
         border: 5px solid #FFFFFF;
         filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.06));
       }
-      form {
-        margin-top: 20px;
-        .btn {
-          background-color: transparent;
-          color: $orange;
-          font-size: 16px;
-          font-family: "Gotham Pro Medium", sans-serif;
-          border: none;
-          margin-left: -25px;
-        }
+      .btn {
+        background-color: transparent;
+        color: $orange;
+        font-size: 16px;
+        font-family: "Gotham Pro Medium", sans-serif;
+        border: none;
+        margin-left: -25px;
       }
     }
     .settings-subtitle {
       font-size: 18px;
       font-family: "Gotham Pro Bold", sans-serif;
       margin-top: 70px;
+      margin-bottom: 35px;
     }
     .settings-form {
       .form-control {
         max-width: 100%;
       }
-      input[type=text], input[type=email] {
+      input[type=text], input[type=tel] {
         background: #f8f8f8 url(../img/cabinet/icons/pencil.svg) right .75rem center/18px 18px no-repeat!important;
       }
       input[disabled] {
@@ -387,6 +387,7 @@
       align-items: center;
       .settings-subtitle {
         margin-top: 0;
+        margin-bottom: 0;
       }
       button {
         background-color: transparent;
@@ -399,7 +400,8 @@
         cursor: pointer;
       }
     }
-    .change-pass-form {
+    .change-pass-block {
+      margin-top: 35px;
       .form-group {
         position: relative;
         input {
@@ -446,6 +448,21 @@
         &.show {
           display: block;
         }
+      }
+    }
+  }
+}
+#cabinet-info {
+  .cabinet-card {
+    .notice-text {
+      color: $orange;
+    }
+    .auth-block {
+      margin-top: 20px;
+      a {
+        font-family: "Gotham Pro Medium", sans-serif;
+        font-size: 16px;
+        color: $orange;
       }
     }
   }
@@ -509,6 +526,9 @@
 #cabinet-child {
   .cabinet-card .card-element .element-info .info-item div:nth-child(2) {
     color: #5A6F8F;
+  }
+  .cabinet-card .add-element {
+    height: 220px;
   }
 }
 #cabinet-subs-buy {

@@ -351,15 +351,17 @@ img::-moz-selection {
 // Media queries
 @media (max-width: 767px) {
   section {
-    padding: 40px 0;
+    padding: 35px 0;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 740px;
   }
-  section {
-    padding: 60px 0;
+}
+@media (max-width: 991px) {
+  ._title {
+    font-size: 26px;
   }
 }
 @media (min-width: 1200px) {
