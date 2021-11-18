@@ -1,7 +1,5 @@
 // Styling for the navbar
 #mainNav {
-  position: sticky;
-  top: 0;
   background-color: #fff;
   z-index: 10;
   padding-top: 15px;
@@ -89,6 +87,11 @@
         }
       }
     }
+  }
+  &.sticky-menu {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
   }
 }
 @media(min-width:992px) {
