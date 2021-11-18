@@ -33,9 +33,6 @@
     target: '#mainNav',
     offset: 56
   });
-  $(window).scroll(function (){
-    $("#mainNav").addClass('sticky-menu');
-  })
   $('#main-carousel').owlCarousel({
     items: 1.4,
     loop:true,
@@ -78,7 +75,7 @@
       768:{
         items:3
       },
-      1000:{
+      1200:{
         items:5
       }
     }
