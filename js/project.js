@@ -42,7 +42,6 @@
         "<i class=\"fas fa-chevron-left\"></i>",
         "<i class=\"fas fa-chevron-right\"></i>"
     ],
-    dots:false,
     responsive:{
       0:{
         items:1
@@ -60,16 +59,14 @@
     navText: [
       "<i class=\"fas fa-chevron-left\"></i>",
       "<i class=\"fas fa-chevron-right\"></i>"
-    ],
-    dots:false
+    ]
   });
   $('#team-carousel').owlCarousel({
     items: 5,
     loop:true,
     margin:10,
-    dots: false,
     autoplay:true,
-    autoplayTimeout:1500,
+    autoplayTimeout:2000,
     autoplayHoverPause:true,
     nav:true,
     navText: [
@@ -80,8 +77,14 @@
       0:{
         items:1
       },
+      575:{
+        items:2
+      },
       768:{
         items:3
+      },
+      992:{
+        items:4
       },
       1200:{
         items:5

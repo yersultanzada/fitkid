@@ -1,4 +1,7 @@
 #programs, #programs-all {
+  .row {
+    justify-content: center;
+  }
   .col {
     flex-basis: 240px;
     flex-grow: 0;
@@ -50,5 +53,22 @@
 #map {
   img {
     width: 100%;
+  }
+}
+@media (max-width: 574px) {
+  #programs, #programs-all {
+    .col {
+      flex-basis: 180px;
+    }
+    .program-block {
+      width: 150px;
+      height: 200px;
+      padding: 20px;
+      .block-name {
+        font-size: 14px;
+        line-height: 17px;
+        word-break: break-word;
+      }
+    }
   }
 }

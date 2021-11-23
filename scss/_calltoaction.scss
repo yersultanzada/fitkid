@@ -78,14 +78,33 @@
     color: #fff;
   }
 }
+@media (max-width: 1300px) {
+  #callToAction #cta-horse .cta-horse {
+    width: 170px;
+    bottom: -74px!important;
+    right: 10px!important;
+  }
+  #callToAction #cta-ball .cta-ball {
+    width: 120px;
+  }
+}
 @media (max-width: 991px) {
   #callToAction #cta-horse .cta-horse {
     width: 140px;
     bottom: -44px!important;
-    right: 10px!important;
+    right: 0!important;
   }
   #callToAction #cta-ball .cta-ball {
     width: 70px;
+    top: -310px !important;
+  }
+}
+@media (max-width: 767px) {
+  #callToAction #cta-horse .cta-horse {
+    display: none;
+  }
+  #callToAction #cta-ball .cta-ball {
+    display: none;
   }
 }
 @media (min-width: 992px) {

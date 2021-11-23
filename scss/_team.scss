@@ -1,7 +1,36 @@
 #team {
-  .owl-carousel .owl-nav {
-    .owl-prev, .owl-next {
-      top: 30%;
+  .owl-carousel {
+    .owl-nav {
+      .owl-prev, .owl-next {
+        top: 30%;
+      }
+    }
+    .owl-item img {
+      margin: auto;
+    }
+  }
+
+}
+@media (max-width: 574px) {
+  .owl-carousel {
+    .owl-nav {
+      display: none !important;
+    }
+    .owl-dots {
+      display: block !important;
+    }
+  }
+  #team-carousel {
+    .owl-item img {
+      width: 80%;
+      margin-top: 20px !important;
+    }
+  }
+}
+@media (min-width: 575px) {
+  .owl-carousel {
+    .owl-dots {
+      display: none !important;
     }
   }
 }

@@ -70,3 +70,9 @@
     }
   }
 }
+@media (max-width: 991px) {
+  #news .news-item .item-title, #news-all .news-item .item-title, #suggest-block .news-item .item-title {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
