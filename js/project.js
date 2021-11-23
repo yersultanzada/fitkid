@@ -42,7 +42,15 @@
         "<i class=\"fas fa-chevron-left\"></i>",
         "<i class=\"fas fa-chevron-right\"></i>"
     ],
-    dots:false
+    dots:false,
+    responsive:{
+      0:{
+        items:1
+      },
+      992:{
+        items:1.4
+      }
+    }
   });
   $('#review-carousel, #news-carousel').owlCarousel({
     items: 3,

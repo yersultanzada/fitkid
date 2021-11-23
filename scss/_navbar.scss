@@ -16,6 +16,7 @@
         padding: 0.75em 0;
         color: $dark-blue;
         font-family: "Gotham Pro Medium", sans-serif;
+        outline: none;
         &.active,
         &:hover {
           color: $orange;

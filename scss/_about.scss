@@ -315,3 +315,28 @@
     }
   }
 }
+@media (max-width: 991px) {
+  #main-about {
+    .about-item {
+      .item-text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #main-about {
+    .about-item {
+      .item-number {
+        margin-right: 15px;
+        align-self: center;
+        margin-top: 0 !important;
+      }
+      .item-text {
+        align-self: center;
+        max-width: 100%;
+        width: 70%;
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@
     background: #FFFFFF;
     border-radius: 10px;
     padding: 23px;
+    margin-bottom: 25px;
     .item-name {
       display: flex;
       align-items: center;
@@ -56,5 +57,11 @@
     align-items: flex-end;
     font-family: "Gotham Pro Medium", sans-serif;
     margin: 24px 0;
+  }
+}
+@media (max-width: 1199px) {
+  #reviews .review-item .item-name span {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
