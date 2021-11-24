@@ -21,6 +21,7 @@
       button {
         border: 1px solid #35ABD3;
         padding: 1px 20px;
+        height: 42px;
         border-radius: 6px;
         margin-left: 16px;
         background-color: transparent;
@@ -105,6 +106,16 @@
   }
   #callToAction #cta-ball .cta-ball {
     display: none;
+  }
+}
+@media (max-width: 574px) {
+  #callToAction .contact-form .form-row input, #partners-callToAction .contact-form .form-row input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #callToAction .contact-form .form-row button, #partners-callToAction .contact-form .form-row button {
+    width: 100%;
+    margin-left: 0;
   }
 }
 @media (min-width: 992px) {
