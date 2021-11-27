@@ -81,6 +81,10 @@ a:hover {
   padding-right: 24px;
 }
 
+.breadcrumb .breadcrumb-item {
+  display: block;
+}
+
 .breadcrumb a {
   text-decoration: none;
   color: #5A6F8F;
@@ -91,6 +95,7 @@ a:hover {
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: "-";
   color: #5A6F8F;
+  padding-right: 5px;
 }
 
 .breadcrumb .breadcrumb-item.active span {
@@ -428,6 +433,19 @@ img::-moz-selection {
   background: transparent;
 }
 
+@media (max-width: 1300px) {
+  ._circle-blur {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  ._title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 767px) {
   section {
     padding: 35px 0;
@@ -437,12 +455,6 @@ img::-moz-selection {
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 740px;
-  }
-}
-
-@media (max-width: 991px) {
-  ._title {
-    font-size: 26px;
   }
 }
 
@@ -1427,10 +1439,14 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   padding-bottom: 30px;
 }
 
-#about-faq .ball-left {
-  position: absolute;
-  top: 90px;
-  left: -50px;
+#about-faq #ball-left {
+  position: static !important;
+}
+
+#about-faq #ball-left .ball-left {
+  position: absolute !important;
+  top: -640px !important;
+  left: -50px !important;
   -webkit-filter: drop-shadow(-10px 8px 19px rgba(19, 41, 75, 0.25));
   filter: drop-shadow(-10px 8px 19px rgba(19, 41, 75, 0.25));
 }
@@ -1440,10 +1456,16 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   left: -422px;
 }
 
-#about-faq .ball-right {
-  position: absolute;
-  bottom: 55px;
-  right: -100px;
+#about-faq #ball-right {
+  position: static !important;
+}
+
+#about-faq #ball-right .ball-right {
+  position: absolute !important;
+  bottom: 55px !important;
+  right: -100px !important;
+  left: auto !important;
+  top: auto !important;
   -webkit-filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
   filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
 }
@@ -1482,9 +1504,6 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   }
   #main-about .girl-left {
     width: 180px;
-  }
-  #main-about ._circle-blur {
-    display: none;
   }
   #main-about .about-item .item-text {
     font-size: 20px;

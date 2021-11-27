@@ -418,6 +418,24 @@
         }
         catch (e) {
         }
+
+        try {
+            var scene = document.getElementById('ball-left');
+            var parallaxInstance = new Parallax(scene, {
+                relativeInput: true
+            });
+        }
+        catch (e) {
+        }
+
+        try {
+            var scene = document.getElementById('ball-right');
+            var parallaxInstance = new Parallax(scene, {
+                relativeInput: true
+            });
+        }
+        catch (e) {
+        }
         
     }
 </script>
