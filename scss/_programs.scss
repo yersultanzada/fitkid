@@ -1,7 +1,4 @@
 #programs, #programs-all {
-  .row {
-    justify-content: center;
-  }
   .col {
     flex-basis: 240px;
     flex-grow: 0;
@@ -55,6 +52,13 @@
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  #programs, #programs-all {
+    .row {
+      justify-content: center;
+    }
+  }
+}
 @media (max-width: 574px) {
   #programs, #programs-all {
     .col {
@@ -69,6 +73,11 @@
         line-height: 17px;
         word-break: break-word;
       }
+    }
+  }
+  #programs-all, #trainers-all {
+    .programs-all-desc, .trainers-all-desc {
+      font-size: 14px;
     }
   }
 }

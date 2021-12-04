@@ -21,40 +21,41 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg" id="mainNav">
 	<div class="container p-0">
-		<div class="col-lg-4 collapse navbar-collapse">
+		<div class="col-lg-4 d-none d-lg-block">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#">О нас</a>
+					<a class="nav-link js-scroll-trigger" href="about.html">О нас</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link js-scroll-trigger" href="partners.html">Партнерам</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#portfolio">Тренеры</a>
+					<a class="nav-link js-scroll-trigger" href="trainers.html">Тренеры</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="#team">Программы</a>
+					<a class="nav-link js-scroll-trigger" href="programs.html">Программы</a>
 				</li>
 			</ul>
 		</div>
-		<div class="col-lg-4 text-center">
+		<div class="col-lg-4 text-lg-center">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top">
-				<img src="img/main/logo.svg" alt="">
+				<img src="img/main/logo.svg" class="d-none d-lg-block desktop-logo" alt="">
+				<img src="img/main/logo-mini.svg" class="d-lg-none mobile-logo" alt="">
 			</a>
 			<a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
 				<i class="fas fa-bars"></i>
 			</a>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-lg-4 d-none d-lg-block">
 			<ul class="right-items">
 				<li>
 					<a href="tel:+77001223344">+7 (700) 122 3344</a>
 				</li>
 				<li>
-					<a href="">Войти</a>
+					<button type="button" data-toggle="modal" data-target="#registrationModal">Войти</button>
 				</li>
 				<li>
-					<a href="">Акции</a>
+					<a href="cabinet-reg.html">Акции</a>
 				</li>
 			</ul>
 		</div>
@@ -85,7 +86,8 @@
 					Тренерский состав
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-md-3">
+				<button class="d-md-none" id="collapse-filter">Фильтр</button>
 				<div class="trainers-filter" id="list-filter">
 					<div class="filter-title">
 						Направления
@@ -144,9 +146,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-9">
+			<div class="col-md-9">
 				<div class="row">
-					<div class="col-lg-3 area gymnastics">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area gymnastics">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/1.png" alt="">
@@ -164,7 +166,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 area basketball">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area basketball">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/2.png" alt="">
@@ -183,7 +185,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 area box">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area box">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/3.png" alt="">
@@ -202,7 +204,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 area tkd">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area tkd">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/4.png" alt="">
@@ -222,7 +224,7 @@
 						</div>
 					</div>
 					
-					<div class="col-lg-3 area tkd">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area tkd">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/1.png" alt="">
@@ -240,7 +242,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 area football">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area football">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/2.png" alt="">
@@ -259,7 +261,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 area box">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area box">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/3.png" alt="">
@@ -278,7 +280,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 area box">
+					<div class="col-sm-6 col-lg-4 col-xl-3 area box">
 						<div class="team-block">
 							<div class="block-img">
 								<img src="img/team/4.png" alt="">
@@ -440,7 +442,7 @@
 		</div>
 	</div>
 </div>
-
+<div class="overlay"></div>
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -453,6 +455,19 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/project.min.js"></script>
+<script>
+	$('#collapse-filter').on('click', function () {
+		$('.trainers-filter').addClass('active');
+		$('.overlay').addClass('active');
+		$('body').addClass('js-no-scroll');
+	});
+
+	$('.overlay').on('click', function () {
+		$('.trainers-filter').removeClass('active');
+		$('.overlay').removeClass('active');
+		$('body').removeClass('js-no-scroll');
+	});
+</script>
 <script>
     function areaListing() {
         if ($('.area-listing').length) {
@@ -476,7 +491,9 @@
 
             $('input[type="radio"]').on('change', function() {
                 currentFilter = this.id;
-
+				$('.trainers-filter').removeClass('active');
+				$('.overlay').removeClass('active');
+				$('body').removeClass('js-no-scroll');
                 filterAreas();
             });
         }

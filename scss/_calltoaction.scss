@@ -77,6 +77,10 @@
   .contact-form .form-row button {
     border-color: #fff;
     color: #fff;
+    &:hover {
+      background-color: #fff;
+      color: $dark-blue;
+    }
   }
 }
 @media (max-width: 1300px) {

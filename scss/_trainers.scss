@@ -1,4 +1,4 @@
-#trainers-all {
+#trainers-all, #suggest-block {
   .team-block {
     margin-bottom: 15px;
     .block-btn {
@@ -10,6 +10,10 @@
         background-color: transparent;
         border-color: $orange;
         padding: 7px 12px;
+        &:hover {
+          background-color: $orange;
+          color: #fff;
+        }
       }
     }
     .category-icon {
@@ -48,6 +52,38 @@
       }
       .custom-control-input:checked~.custom-control-label:before {
         background-color: #35ABD3;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  #trainers-all .trainers-filter {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #f9f9f9;
+    padding: 30px 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    overflow-y: scroll;
+    &.active {
+      left: 0;
+    }
+  }
+}
+@media (max-width: 574px) {
+  #trainers-solo, #programs-solo {
+    .align-items-baseline {
+      flex-direction: column;
+      ._title {
+        margin-bottom: 15px;
+      }
+      .title-btn {
+        margin-left: 0;
+        margin-bottom: 30px;
       }
     }
   }

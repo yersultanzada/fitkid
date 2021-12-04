@@ -185,7 +185,6 @@
 }
 .popup-modal {
   .modal-dialog {
-    max-width: 400px;
     .modal-content {
       border: none;
       border-radius: 11px;
@@ -310,5 +309,10 @@
         margin-right: 10px;
       }
     }
+  }
+}
+@media (min-width: 576px) {
+  .popup-modal .modal-dialog {
+    max-width: 400px;
   }
 }

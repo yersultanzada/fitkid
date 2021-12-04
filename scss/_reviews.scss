@@ -52,16 +52,40 @@
   }
 }
 #reviews-solo {
-  .object-solo-block .block-text .partner-text {
-    display: flex;
-    align-items: flex-end;
-    font-family: "Gotham Pro Medium", sans-serif;
-    margin: 24px 0;
+  .object-solo-block {
+    .block-img img {
+      width: initial;
+    }
+    .block-text .partner-text {
+      display: flex;
+      align-items: flex-end;
+      font-family: "Gotham Pro Medium", sans-serif;
+      margin: 24px 0;
+    }
   }
 }
 @media (max-width: 1199px) {
-  #reviews .review-item .item-name span {
-    font-size: 20px;
-    line-height: 26px;
+  #reviews, #reviews-all, #suggest-block {
+    .review-item .item-name span {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  #reviews-solo, #news-solo {
+    .align-items-baseline {
+      flex-direction: column;
+      ._title {
+        margin-bottom: 15px;
+      }
+      .title-btn {
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+    }
+    .object-solo-block .block-text .main-text {
+      margin-bottom: 10px;
+    }
   }
 }

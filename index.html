@@ -24,21 +24,21 @@
 		<div class="col-lg-4 d-none d-lg-block">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="about.html">О нас</a>
+					<a class="nav-link" href="about.html">О нас</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="partners.html">Партнерам</a>
+					<a class="nav-link" href="partners.html">Партнерам</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="trainers.html">Тренеры</a>
+					<a class="nav-link" href="trainers.html">Тренеры</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link js-scroll-trigger" href="programs.html">Программы</a>
+					<a class="nav-link" href="programs.html">Программы</a>
 				</li>
 			</ul>
 		</div>
 		<div class="col-lg-4 text-lg-center">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<a class="navbar-brand">
 				<img src="img/main/logo.svg" class="d-none d-lg-block desktop-logo" alt="">
 				<img src="img/main/logo-mini.svg" class="d-lg-none mobile-logo" alt="">
 			</a>
@@ -653,7 +653,6 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="vendor/jquery/mask.js"></script>
 <!-- Contact form JavaScript -->
 <script src="vendor/owlCarousel/js/owl.carousel.min.js"></script>
@@ -661,26 +660,59 @@
 <!-- Custom scripts for this template -->
 <script src="js/project.min.js"></script>
 <script>
-    if($(window).width()>768){
-        try {
-            var scene = document.getElementById('cta-ball');
-            var parallaxInstance = new Parallax(scene, {
-                relativeInput: true
-            });
-        }
-        catch (e) {
-        }
+	if($(window).width()>768){
+		try {
+			var scene = document.getElementById('cta-ball');
+			var parallaxInstance = new Parallax(scene, {
+				relativeInput: true
+			});
+		}
+		catch (e) {
+		}
 
-        try {
-            var scene = document.getElementById('cta-horse');
-            var parallaxInstance = new Parallax(scene, {
-                relativeInput: true
-            });
-        }
-        catch (e) {
-        }
+		try {
+			var scene = document.getElementById('cta-horse');
+			var parallaxInstance = new Parallax(scene, {
+				relativeInput: true
+			});
+		}
+		catch (e) {
+		}
 
-    }
+		try {
+			var scene = document.getElementById('ball-left');
+			var parallaxInstance = new Parallax(scene, {
+				relativeInput: true
+			});
+		}
+		catch (e) {
+		}
+
+		try {
+			var scene = document.getElementById('ball-right');
+			var parallaxInstance = new Parallax(scene, {
+				relativeInput: true
+			});
+		}
+		catch (e) {
+		}
+		try {
+			var scene = document.getElementById('partners-ball');
+			var parallaxInstance = new Parallax(scene, {
+				relativeInput: true
+			});
+		}
+		catch (e) {
+		}
+		try {
+			var scene = document.getElementById('chess-right');
+			var parallaxInstance = new Parallax(scene, {
+				relativeInput: true
+			});
+		}
+		catch (e) {
+		}
+	}
 </script>
 </body>
 

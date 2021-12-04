@@ -1,26 +1,6 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
-    }
-  });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-    $('#menuModal').modal('hide');
-  });
-
   $('#menuModal').on('hidden.bs.modal', function (e) {
       $('body').removeClass('js-no-scroll')
   });
@@ -59,7 +39,18 @@
     navText: [
       "<i class=\"fas fa-chevron-left\"></i>",
       "<i class=\"fas fa-chevron-right\"></i>"
-    ]
+    ],
+    responsive:{
+      0:{
+        items:1
+      },
+      768:{
+        items:2
+      },
+      992:{
+        items:3
+      }
+    }
   });
   $('#team-carousel').owlCarousel({
     items: 5,
@@ -96,14 +87,14 @@
     input: false
   });
   //показывает доп поля при нажатии на изменить пароль
-  $('.change-password button').on('click', function () {
-    $('.change-password button').css({
+  $('.change-password .change-pass-btn').on('click', function () {
+    $('.change-password .change-pass-btn').css({
       'display': 'none'
     });
     $('.show-new-fields').addClass('show');
   });
   //меняет иконку глаза при клике в поле пароля
-  $('.change-pass-form .eye-icon').on('click', function () {
+  $('.change-pass-block .eye-icon').on('click', function () {
     $(this).toggleClass('hide');
   });
   //удаляет строку(ненужный абонемент) при клике на иконку удаления в корзине
@@ -120,9 +111,8 @@
     });
     $('.custom-block .buy-btn button .btn-text').text('Оплатить');
   });
-  //скрывает пред. модалку когда нажимаешь "да" при удалении абонемента
+  //скрывает предыдущую модалку когда нажимаешь "да" при удалении абонемента
   $('#subsDeletedModal').on('shown.bs.modal', function (event) {
     $('#delSubsModal').modal('hide');
   })
-
 })(jQuery); // End of use strict

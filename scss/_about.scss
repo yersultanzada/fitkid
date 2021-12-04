@@ -253,15 +253,6 @@
     }
   }
 }
-@media (min-width: 992px) {
-  #about-stat {
-    .stat-desc {
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-}
 @media (max-width: 1550px) {
   #main-about {
     .boy-right {
@@ -279,6 +270,35 @@
       left: 0;
       &._right {
         right: 0;
+      }
+    }
+  }
+  #about-faq {
+    #ball-left {
+      .ball-left {
+        width: 100px;
+        left: 0 !important;
+      }
+    }
+    #ball-right {
+      .ball-right {
+        width: 130px;
+        right: 50px !important;
+      }
+    }
+  }
+  #partners-main {
+    ._circle-blur {
+      right: 0 !important;
+    }
+    #partners-ball {
+      .partners-ball {
+        width: 130px;
+      }
+    }
+    #chess-right {
+      .chess-right {
+        width: 150px;
       }
     }
   }
@@ -319,12 +339,63 @@
       }
     }
   }
+  #about-stat {
+    .stat-item {
+      padding: 25px;
+      height: 220px;
+      .item-upText {
+        font-size: 18px;
+        line-height: 1.25;
+      }
+      .item-digit {
+        font-size: 65px;
+        line-height: 1.25;
+      }
+      .item-downText {
+        font-size: 20px;
+        line-height: 1.25;
+      }
+    }
+  }
 }
 @media (max-width: 991px) {
   #main-about {
     .about-item {
       .item-text {
         font-size: 16px;
+      }
+    }
+  }
+  #about-stat {
+    .stat-item {
+      margin-bottom: 25px;
+    }
+  }
+  #about-faq {
+    #ball-left {
+      .ball-left {
+        display: none !important;
+      }
+    }
+    #ball-right {
+      .ball-right {
+        display: none !important;
+      }
+    }
+    .accordion .card .card-header .btn {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  #partners-main {
+    #partners-ball {
+      .partners-ball {
+        display: none !important;
+      }
+    }
+    #chess-right {
+      .chess-right {
+        display: none !important;
       }
     }
   }
@@ -342,6 +413,26 @@
         max-width: 100%;
         width: 70%;
       }
+    }
+  }
+  #about-center .about-founder .founder-img img {
+    width: 200px;
+    height: 200px;
+  }
+  #about-faq .accordion .card .card-header .btn .header-arrow {
+    width: 35px;
+    height: 35px;
+    i {
+      font-size: 13px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  #about-stat {
+    .stat-desc {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

@@ -14,16 +14,25 @@
     font-family: "Gotham Pro Medium", sans-serif;
     line-height: 36px;
   }
-  .ball-left {
-    position: absolute;
-    bottom: 0;
-    left: -50px;
-    filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
+  #partners-ball {
+    position: static !important;
+    .partners-ball {
+      position: absolute !important;
+      bottom: 0 !important;
+      left: -50px !important;
+      top: auto !important;
+      filter: drop-shadow(28px 31px 36px rgba(19, 41, 75, 0.1));
+    }
   }
-  .chess-right {
-    position: absolute;
-    bottom: -250px;
-    right: 0;
+  #chess-right {
+    position: static !important;
+    .chess-right {
+      position: absolute !important;
+      bottom: -250px !important;
+      right: 0 !important;
+      top: auto !important;
+      left: auto !important;
+    }
   }
   ._circle-blur {
     right: -300px;
@@ -45,6 +54,42 @@
       line-height: 1.3;
       color: #5A6F8F;
     }
+  }
+}
+@media (max-width: 1350px) {
+  .partners-pt .call-moto {
+    width: 250px;
+  }
+}
+@media (max-width: 1199px) {
+  #partners-main {
+    .main-center {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  #partners-adv .adv-item {
+    .item-title {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .item-desc {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  #partners-adv .adv-item {
+    margin-bottom: 30px;
+  }
+  .partners-pt .call-moto {
+    display: none;
+  }
+}
+@media (max-width: 574px) {
+  #partners-main .main-center {
+    font-size: 14px;
+    line-height: 23px;
   }
 }
 @media (min-width: 992px) {
