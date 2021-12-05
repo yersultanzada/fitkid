@@ -675,6 +675,15 @@
       left: 0;
     }
   }
+  #cabinet-subs-buy .cabinet-card .card-table .table-body-row>div:nth-child(1), #cabinet-subs-buy .cabinet-card .card-table .table-head>div:nth-child(1) {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  #cabinet-subs-buy .cabinet-card .card-allPrice .body-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 @media (max-width: 574px) {
   .cabinet .cabinet-card {
@@ -719,7 +728,7 @@
     width: 100%;
   }
   .cabinet .cabinet-card .cabinet-btn button.cancel-btn {
-    margin-left: 0;
+    margin-left: 0 !important;
     margin-top: 20px;
     width: 100%;
   }

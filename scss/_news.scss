@@ -1,6 +1,10 @@
 #news, #news-all, #suggest-block {
   .news-item {
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+    padding: 20px;
+    border-radius: 10px;
     .item-img {
       img {
         width: 100%;
@@ -29,6 +33,10 @@
         font-family: "Gotham Pro Medium", sans-serif;
         margin-right: 7px;
       }
+    }
+    &:hover {
+      box-shadow: 2px 4px 16px rgba(0,0,0,0.16);
+      transform: scale3d(1.01,1.01,1.01);
     }
   }
 }
