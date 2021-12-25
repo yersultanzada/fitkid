@@ -543,21 +543,18 @@
       .table-head, .table-body-row {
         align-items: baseline;
         &>div:nth-child(1) {
-          width: 20px;
-        }
-        &>div:nth-child(2) {
           width: 260px;
         }
-        &>div:nth-child(3) {
+        &>div:nth-child(2) {
           width: 120px;
         }
-        &>div:nth-child(4) {
+        &>div:nth-child(3) {
           width: 200px;
         }
-        &>div:nth-child(5) {
+        &>div:nth-child(4) {
           width: 140px;
         }
-        &>div:nth-child(6) {
+        &>div:nth-child(5) {
           width: 130px;
         }
         p {
@@ -590,7 +587,7 @@
     .card-allPrice {
       background-color: #fff;
       border-radius: 10px;
-      padding: 40px 30px 80px;
+      padding: 40px 30px 60px;
       margin-top: 24px;
       .allPrice-title {
         text-align: center;
@@ -600,7 +597,6 @@
       }
       .allPrice-body {
         padding-bottom: 30px;
-        border-bottom: 1px solid #ccc;
       }
       .body-item {
         display: flex;
@@ -611,6 +607,7 @@
           font-size: 16px;
           &:last-child {
             font-family: "Gotham Pro Medium", sans-serif;
+            font-size: 20px;
           }
         }
         .pack-price {
@@ -646,6 +643,10 @@
         font-size: 24px;
         font-family: "Gotham Pro Medium", sans-serif;
         padding: 18px 0;
+        &.cancel-btn {
+          border: 2px solid $orange;
+          color: $orange;
+        }
       }
     }
   }

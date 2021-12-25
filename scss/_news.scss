@@ -62,6 +62,7 @@
     }
     .block-images {
       margin-bottom: 30px;
+      margin-top: 40px;
       img {
         width: 100%;
         border-radius: 10px;
@@ -88,5 +89,15 @@
   }
   #news-solo .news-solo-block .block-images img {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #news-solo .object-solo-block .block-img img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #news-solo .object-solo-block .block-img img {
+    width: 500px;
   }
 }

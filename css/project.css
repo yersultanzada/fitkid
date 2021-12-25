@@ -1945,6 +1945,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 #news-solo .news-solo-block .block-images {
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 #news-solo .news-solo-block .block-images img {
@@ -1966,6 +1967,18 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   }
   #news-solo .news-solo-block .block-images img {
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  #news-solo .object-solo-block .block-img img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #news-solo .object-solo-block .block-img img {
+    width: 500px;
   }
 }
 
@@ -2906,26 +2919,22 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 }
 
 #cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(1), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(1) {
-  width: 20px;
-}
-
-#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(2), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(2) {
   width: 260px;
 }
 
-#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(3), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(3) {
+#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(2), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(2) {
   width: 120px;
 }
 
-#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(4), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(4) {
+#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(3), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(3) {
   width: 200px;
 }
 
-#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(5), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(5) {
+#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(4), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(4) {
   width: 140px;
 }
 
-#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(6), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(6) {
+#cabinet-subs-buy .cabinet-card .card-table .table-head > div:nth-child(5), #cabinet-subs-buy .cabinet-card .card-table .table-body-row > div:nth-child(5) {
   width: 130px;
 }
 
@@ -2966,7 +2975,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 #cabinet-subs-buy .cabinet-card .card-allPrice {
   background-color: #fff;
   border-radius: 10px;
-  padding: 40px 30px 80px;
+  padding: 40px 30px 60px;
   margin-top: 24px;
 }
 
@@ -2979,7 +2988,6 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 #cabinet-subs-buy .cabinet-card .card-allPrice .allPrice-body {
   padding-bottom: 30px;
-  border-bottom: 1px solid #ccc;
 }
 
 #cabinet-subs-buy .cabinet-card .card-allPrice .body-item {
@@ -3001,6 +3009,7 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
 
 #cabinet-subs-buy .cabinet-card .card-allPrice .body-item > div:last-child {
   font-family: "Gotham Pro Medium", sans-serif;
+  font-size: 20px;
 }
 
 #cabinet-subs-buy .cabinet-card .card-allPrice .body-item .pack-price {
@@ -3040,6 +3049,11 @@ section#masthead #main-carousel .owl-nav .owl-prev, section#masthead #main-carou
   font-size: 24px;
   font-family: "Gotham Pro Medium", sans-serif;
   padding: 18px 0;
+}
+
+#cabinet-subs-buy .cabinet-card .final-buy-btn a.cancel-btn {
+  border: 2px solid #ff9e00;
+  color: #ff9e00;
 }
 
 .datepicker td, .datepicker th {

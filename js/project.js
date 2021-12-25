@@ -97,10 +97,6 @@
   $('.change-pass-block .eye-icon').on('click', function () {
     $(this).toggleClass('hide');
   });
-  //удаляет строку(ненужный абонемент) при клике на иконку удаления в корзине
-  $('#cabinet-subs-buy .del-cart-item').on('click', function () {
-    $(this).parent().parent().addClass('d-none');
-  });
   //операции с кнопкой корзины на стр абонемента
   $('.element-info .cabinet-btn .card-buy-btn').on('click', function () {
     $(this).text('В корзине');
